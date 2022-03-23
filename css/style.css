@@ -27,7 +27,6 @@ a {
     color: #F9FAF8;
 }
 
-
 .header-link {
     display: flex;
     justify-content: center;
@@ -52,6 +51,7 @@ a {
     flex: 0.5;
     padding-right: 3em;
 }
+
 .subheader-text1 {
     margin: 0;
 
@@ -105,19 +105,21 @@ a {
     margin: auto;
     padding: 0em 0em 1em 0em;
     
+    color: #1F2937;
     font-size: 36px;
     font-weight: 900;
     text-align: center;
-    color: #1F2937;
 }
 
 .content-box-container {
     display: flex;
+    flex-flow: row wrap;
     justify-content: space-evenly;
 }
 
 .content-box {
     width: 8em;
+    margin-bottom: 2em;
 }
 
 .content-box-box {
@@ -129,8 +131,15 @@ a {
     border-radius: 15px;
 }
 
+.content-box-box img {
+    max-width: 100%;
+    height: 8em;
+    border-radius: 10px;
+}
+
 .content-box-content {
     text-align: center;
+    color: #606772;
 }
 
 
@@ -140,6 +149,8 @@ a {
 }
 
 .quote {
+    margin-bottom: 0.8em;
+
     font-weight: 100;
     font-style: italic;
     color: #1F2937;
@@ -175,7 +186,7 @@ a {
 }
 
 .cta-text1 {
-    margin: 0px 0px 0px 0px;
+    margin: 0em 0em 0.4em 0em;
     font-weight: 900;
     font-size: 20px;
 }
