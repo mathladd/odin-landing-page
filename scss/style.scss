@@ -275,16 +275,16 @@ a {
     .index__subheader-text2,
     .index__signup-button,
     .index__quote-author,
-    .index__cta-text1 {
+    .index__cta-text1,
+    .contact__contact-form,
+    .contact__moreInfo {
         @include custFontSizeVeryLarge();
     }
 
     .all__footer-container,
     .all__header-link,
     .index__content-box-content,
-    .index__cta-text2,
-    .contact__contact-form,
-    .contact__moreInfo {
+    .index__cta-text2 {
         @include custFontSizeLarge();
     }
 }
