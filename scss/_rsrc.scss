@@ -1,0 +1,101 @@
+
+
+/* colors */
+$colorWhiteRed: #ebe2e2;
+$colorWhiteBlue: #e5e7ec;
+
+$colorGreyLight: #e0e0e0;
+$colorOrangeLight: #ffdfaf;
+
+$colorGreyPastel: #bebebe;
+$colorOrangePastel: #ffc16f;
+$colorPinkPastel: #ffa1dd;
+$colorRedPastel: #ff9e9e;
+
+$colorGrey: #8d8d8d;
+$colorBlue: #3882F6;
+$colorOrange: #ff941b;
+$colorRed: #c43737;
+
+$colorBlueHeavy: #184ea3;
+$colorGreyHeavy: #646464;
+
+$colorGreyDark: #383838;
+$colorBlueDark: #1F2937;
+$colorBrownDark: #270d00;
+$colorRedDark: #770000;
+
+
+/* common functions */
+@mixin custStyleHTML() {
+    font-size: 62.5%;
+}
+
+@mixin custStyleDoc() {
+    margin: 0;
+    min-width: 100%;
+    min-height: 100%;
+    // display: flex;
+    @include custFontFamBasic();
+}
+
+@mixin custStyleBigContainer() {
+    padding: 5em 10em 5em 10em;
+}
+
+@mixin custFlexCenterAll() {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin custColorBg($bgcColor) {
+    background-color: $bgcColor;
+}
+
+@mixin custColorFnt($color) {
+    color: $color;
+}
+
+@mixin custFontSizeHTML() {
+    font-size: 62.5%;
+}
+
+@mixin custFontSizeBody() {
+    font-size: 14px;
+    font-size: 1.4rem;
+}
+
+@mixin custFontSizeExtraLarge() {
+    font-size: 57px;
+    font-size: 5.7rem;
+}
+
+@mixin custFontSizeLarge() {
+    font-size: 36px;
+    font-size: 3.6rem;
+}
+
+@mixin custFontSizeMed() {
+    font-size: 22px;
+    font-size: 2.2rem;
+}
+
+@mixin custFontSizeSmall() {
+    font-size: 14px;
+    font-size: 1.4rem;
+}
+
+@mixin custFontSizeExtraSmall() {
+    font-size: 8.75px;
+    font-size: 0.875rem;
+}
+
+@mixin custFontFamMono() {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
+@mixin custFontFamBasic() {
+    font-family: Helvetica, Arial, sans-serif;
+}

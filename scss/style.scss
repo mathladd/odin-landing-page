@@ -1,0 +1,285 @@
+
+@import "./_rsrc";
+
+
+html, 
+body {
+    @include custStyleDoc();
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.big-container {
+    @include custStyleBigContainer();
+}
+
+
+.h1-container {
+    @include custFlexCenterAll();
+    @include custStyleBigContainer();
+    flex-flow: row wrap;
+    justify-content: space-between;
+
+    padding-top: 2em;
+    padding-bottom: 3em;
+    @include custColorBg($colorBlueDark);
+}
+
+.header-logo {
+    flex: 2;
+
+    @include custFontSizeMed();
+    font-weight: 900;
+    color: #F9FAF8;
+}
+
+.header-link {
+    @include custFlexCenterAll();
+    padding: 0em 0.8em 0em 0.8em;
+
+    font-size: 18px;
+    color: #E5E7EB;
+}
+
+.c1-container {
+    @include custFlexCenterAll();
+    justify-content: space-between;
+    @include custStyleBigContainer();
+    
+    padding-top: 3em;
+    padding-bottom: 8em;
+    @include custColorBg($colorBlueDark);
+}
+
+.subheader-texts {
+    flex: 0.5;
+    padding-right: 3em;
+}
+
+.subheader-text1 {
+    margin: 0;
+
+    @include custFontSizeMed();
+    @include custColorFnt($colorWhiteBlue);
+    font-weight: 900;
+}
+
+.subheader-text2 {
+    margin: 0;
+    
+    @include custFontSizeSmall();
+    @include custColorFnt($colorWhiteBlue);
+    font-weight: 100;
+}
+
+.signup-button {
+    width: fit-content;
+    border-radius: 7px;
+    padding: 0.3em 2em 0.3em 2em;
+
+    @include custColorBg($colorBlue);
+    @include custColorFnt($colorWhiteBlue);
+    @include custFontSizeExtraSmall();
+    font-weight: 700;
+
+}
+
+.signup-button1 {
+    margin: 1em 0em 1em 0em;
+}
+
+.subheader-img {
+    @include custFlexCenterAll();
+    flex: 0.5;
+}
+
+.subheader-img img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.c2-container {
+    @include custStyleBigContainer();
+    @include custFlexCenterAll();
+    flex-flow: row wrap;
+    padding-top: 3em;
+    padding-bottom: 8em;
+} 
+
+.content-title {
+    width: 100%;
+    margin: auto;
+    padding: 1em 0em 1em 0em;
+    
+    @include custColorFnt($colorBlueDark);
+    @include custFontSizeMed();
+    font-weight: 900;
+    text-align: center;
+}
+
+.content-box-container {
+    @include custFlexCenterAll();
+    flex-flow: row wrap;
+}
+
+.content-box {
+    width: 8em;
+    margin-left: 2em;
+    margin-right: 2em;
+    margin-bottom: 2em;
+}
+
+.content-box-box {
+    width: 100%;
+    height: 8em;
+    margin-bottom: 0.7em;
+    border-style: solid;
+    border-color: $colorBlue;
+    border-radius: 15px;
+}
+
+.content-box-box img {
+    max-width: 100%;
+    height: 8em;
+    border-radius: 10px;
+}
+
+.content-box-content {
+    text-align: center;
+    color: $colorGreyHeavy;
+}
+
+.c3-container {
+    @include custStyleBigContainer();
+    padding-top: 3em;
+    padding-bottom: 3em;
+
+    @include custColorBg($colorWhiteBlue);
+}
+
+.quote {
+    padding-top: 2em;
+    margin-bottom: 0.8em;
+
+    font-weight: 100;
+    font-style: italic;
+    @include custColorFnt($colorBlueDark);
+    @include custFontSizeMed();
+}
+
+.quote-author {
+    padding-bottom: 3em;
+
+    @include custFontSizeSmall();
+    text-align: right;
+    font-weight: 900;
+}
+
+
+.c4-container {
+    @include custStyleBigContainer();
+    padding-top: 5em;
+    padding-bottom: 6em;
+}
+
+.cta {
+    @include custFlexCenterAll();
+    padding: 2em 6em 2em 6em;
+    border-radius: 10px;
+
+    @include custColorBg($colorBlue);
+    @include custColorFnt($colorWhiteBlue);
+}
+
+.cta-texts {
+    flex: 1;
+    padding-right: 3em;
+}
+
+.cta-text1 {
+    margin: 0em 0em 0.4em 0em;
+    font-weight: 900;
+
+    @include custFontSizeMed();
+}
+
+.cta-text2 {
+    margin: 0px 0px 0px 0px;
+
+    @include custFontSizeSmall();
+    font-weight: 100;
+}
+
+.signup-button2 {
+    width: fit-content;
+    border-style: solid;
+    border-color: $colorWhiteBlue;
+    border-width: 2px;
+}
+
+.footer-container {
+    @include custFlexCenterAll();
+    // @include custStyleFooter();
+    text-align: center;
+    padding: 3em 10em 3em 10em;
+
+    @include custColorBg($colorBlueDark);
+    @include custColorFnt($colorWhiteBlue);
+}
+
+fieldset {
+    @include custFlexCenterAll();
+    flex-flow: column wrap;
+    min-width: 20em;
+    margin: 2em 4em 2em 4em;
+
+    @include custColorFnt($colorGreyDark);
+}
+
+.main-form-1 {
+    min-height: 100%;
+}
+
+.main-form-2 {
+    min-height: 100%;
+}
+
+.contact-form {
+    padding: 1em 1em 1em 1em;
+    
+    @include custFontSizeExtraSmall();
+}
+
+.contact-form input {
+    width: 100%;
+    padding-top: 0.4em;
+    padding-bottom: 0.4em;
+    border: 1px solid $colorGrey;
+    border-radius: 4px;
+}
+
+#moreInfo {
+    height: 10em;
+    width: 100%;
+
+    @include custFontFamBasic();
+    @include custFontSizeExtraSmall();
+}
+
+.submit-button {
+    padding: 0.5em 1em 0.5em 1em;
+    border: none;
+    border-radius: 10px;
+
+    @include custColorBg($colorBlue);
+    @include custColorFnt($colorWhiteBlue);
+    font-weight: 900;
+    cursor: pointer;
+}
+
+.submit-button:active {
+    @include custColorBg($colorBlueHeavy)
+}
