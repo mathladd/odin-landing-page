@@ -24,7 +24,6 @@ a {
 .all__header-logo {
     flex: 2;
 
-    @include custFontSizeLarge();
     @include custColorFnt($colorWhiteBlue);
     font-weight: 900;
 }
@@ -33,8 +32,16 @@ a {
     @include custFlexCenterAll();
     padding: 0em 0.8em 0em 0.8em;
 
-    font-size: 18px;
-    color: #E5E7EB;
+    @include custColorFnt($colorWhiteBlue);
+}
+
+.all__footer-container {
+    @include custFlexCenterAll();
+    text-align: center;
+    padding: 3em 10em 3em 10em;
+
+    @include custColorBg($colorBlueDark);
+    @include custColorFnt($colorWhiteBlue);
 }
 
 .index__c1-container {
@@ -54,7 +61,6 @@ a {
 .index__subheader-text1 {
     margin: 0;
 
-    @include custFontSizeLarge();
     @include custColorFnt($colorWhiteBlue);
     font-weight: 900;
 }
@@ -62,7 +68,6 @@ a {
 .index__subheader-text2 {
     margin: 0;
     
-    @include custFontSizeMed();
     @include custColorFnt($colorWhiteBlue);
     font-weight: 100;
 }
@@ -74,7 +79,7 @@ a {
 
     @include custColorBg($colorBlue);
     @include custColorFnt($colorWhiteBlue);
-    @include custFontSizeMed();
+    white-space: nowrap;
     font-weight: 700;
 
 }
@@ -93,7 +98,8 @@ a {
     max-height: 100%;
 }
 
-.index__c2-container {
+.index__c2-container,
+.contact__c1-container {
     @include custFlexCenterAll();
     flex-flow: row wrap;
     padding-top: 3em;
@@ -106,7 +112,6 @@ a {
     padding: 1em 0em 1em 0em;
     
     @include custColorFnt($colorBlueDark);
-    @include custFontSizeLarge();
     font-weight: 900;
     text-align: center;
 }
@@ -139,13 +144,13 @@ a {
 }
 
 .index__content-box-content {
-    @include custFontSizeSmall();
     text-align: center;
     color: $colorGreyHeavy;
     height: 1em;
 }
 
-.index__c3-container {
+.index__c3-container,
+.contact__c2-container {
     padding-top: 3em;
     padding-bottom: 3em;
 
@@ -159,13 +164,11 @@ a {
     font-weight: 100;
     font-style: italic;
     @include custColorFnt($colorBlueDark);
-    @include custFontSizeLarge();
 }
 
 .index__quote-author {
     padding-bottom: 3em;
 
-    @include custFontSizeMed();
     text-align: right;
     font-weight: 900;
 }
@@ -192,14 +195,11 @@ a {
 .index__cta-text1 {
     margin: 0em 0em 0.4em 0em;
     font-weight: 900;
-
-    @include custFontSizeMed();
 }
 
 .index__cta-text2 {
     margin: 0px 0px 0px 0px;
 
-    @include custFontSizeSmall();
     font-weight: 100;
 }
 
@@ -210,17 +210,7 @@ a {
     border-width: 2px;
 }
 
-.all__footer-container {
-    @include custFlexCenterAll();
-    text-align: center;
-    padding: 3em 10em 3em 10em;
-
-    @include custFontSizeSmall();
-    @include custColorBg($colorBlueDark);
-    @include custColorFnt($colorWhiteBlue);
-}
-
-fieldset {
+.contact__fieldset {
     @include custFlexCenterAll();
     flex-flow: column wrap;
     min-width: 20em;
@@ -229,21 +219,19 @@ fieldset {
     @include custColorFnt($colorGreyDark);
 }
 
-.main-form-1 {
+.contact__main-form-1 {
     min-height: 100%;
 }
 
-.main-form-2 {
+.contact__main-form-2 {
     min-height: 100%;
 }
 
-.contact-form {
+.contact__contact-form {
     padding: 1em 1em 1em 1em;
-
-    @include custFontSizeSmall();
 }
 
-.contact-form input {
+.contact__contact-form input {
     width: 100%;
     padding-top: 0.4em;
     padding-bottom: 0.4em;
@@ -251,16 +239,16 @@ fieldset {
     border-radius: 4px;
 }
 
-#moreInfo {
+.contact__moreInfo {
     height: 10em;
     width: 100%;
 
     @include custFontFamBasic();
-    @include custFontSizeSmall();
 }
 
-.submit-button {
+.contact__submit-button {
     padding: 0.5em 1em 0.5em 1em;
+    margin: 1em;
     border: none;
     border-radius: 10px;
 
@@ -270,13 +258,61 @@ fieldset {
     cursor: pointer;
 }
 
-.submit-button:active {
+.contact__submit-button:active {
     @include custColorBg($colorBlueHeavy)
 }
 
 
 @media only screen and (min-width: 40.1rem) and (max-width: 96rem) {
     /* Tablet */
+    .all__header-logo,
+    .index__subheader-text1,
+    .index__content-title,
+    .index__quote {
+        @include custFontSizeExtraLarge();
+    }
+
+    .index__subheader-text2,
+    .index__signup-button,
+    .index__quote-author,
+    .index__cta-text1 {
+        @include custFontSizeVeryLarge();
+    }
+
+    .all__footer-container,
+    .all__header-link,
+    .index__content-box-content,
+    .index__cta-text2,
+    .contact__contact-form,
+    .contact__moreInfo {
+        @include custFontSizeLarge();
+    }
+}
+
+@media only screen and (min-width: 40.1rem) and (max-width: 96rem) {
+    /* Tablet */
+    .all__header-logo,
+    .index__subheader-text1,
+    .index__content-title,
+    .index__quote {
+        @include custFontSizeVeryLarge();
+    }
+
+    .index__subheader-text2,
+    .index__signup-button,
+    .index__quote-author,
+    .index__cta-text1 {
+        @include custFontSizeLarge();
+    }
+
+    .all__footer-container,
+    .all__header-link,
+    .index__content-box-content,
+    .index__cta-text2,
+    .contact__contact-form,
+    .contact__moreInfo {
+        @include custFontSizeMed();
+    }
 }
 
 @media only screen and (min-width: 96.1rem) {
@@ -284,5 +320,28 @@ fieldset {
     .html {
         width: 96rem;
         margin: 0 auto;
+    }
+
+    .all__header-logo,
+    .index__subheader-text1,
+    .index__content-title,
+    .index__quote {
+        @include custFontSizeLarge();
+    }
+
+    .index__subheader-text2,
+    .index__signup-button,
+    .index__quote-author,
+    .index__cta-text1 {
+        @include custFontSizeMed();
+    }
+
+    .all__footer-container,
+    .all__header-link,
+    .index__content-box-content,
+    .index__cta-text2,
+    .contact__contact-form,
+    .contact__moreInfo {
+        @include custFontSizeSmall();
     }
 }
