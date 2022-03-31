@@ -2,10 +2,7 @@
 @import "./_rsrc";
 
 
-html, 
-body {
-    @include custStyleDoc();
-}
+@include custStyleDoc();
 
 a {
     text-decoration: none;
@@ -31,7 +28,7 @@ a {
 .header-logo {
     flex: 2;
 
-    @include custFontSizeMed();
+    @include custFontSizeLarge();
     font-weight: 900;
     color: #F9FAF8;
 }
@@ -62,7 +59,7 @@ a {
 .subheader-text1 {
     margin: 0;
 
-    @include custFontSizeMed();
+    @include custFontSizeLarge();
     @include custColorFnt($colorWhiteBlue);
     font-weight: 900;
 }
@@ -70,7 +67,7 @@ a {
 .subheader-text2 {
     margin: 0;
     
-    @include custFontSizeSmall();
+    @include custFontSizeMed();
     @include custColorFnt($colorWhiteBlue);
     font-weight: 100;
 }
@@ -82,7 +79,7 @@ a {
 
     @include custColorBg($colorBlue);
     @include custColorFnt($colorWhiteBlue);
-    @include custFontSizeExtraSmall();
+    @include custFontSizeMed();
     font-weight: 700;
 
 }
@@ -115,7 +112,7 @@ a {
     padding: 1em 0em 1em 0em;
     
     @include custColorFnt($colorBlueDark);
-    @include custFontSizeMed();
+    @include custFontSizeLarge();
     font-weight: 900;
     text-align: center;
 }
@@ -148,6 +145,7 @@ a {
 }
 
 .content-box-content {
+    @include custFontSizeSmall();
     text-align: center;
     color: $colorGreyHeavy;
 }
@@ -167,17 +165,16 @@ a {
     font-weight: 100;
     font-style: italic;
     @include custColorFnt($colorBlueDark);
-    @include custFontSizeMed();
+    @include custFontSizeLarge();
 }
 
 .quote-author {
     padding-bottom: 3em;
 
-    @include custFontSizeSmall();
+    @include custFontSizeMed();
     text-align: right;
     font-weight: 900;
 }
-
 
 .c4-container {
     @include custStyleBigContainer();
@@ -222,10 +219,10 @@ a {
 
 .footer-container {
     @include custFlexCenterAll();
-    // @include custStyleFooter();
     text-align: center;
     padding: 3em 10em 3em 10em;
 
+    @include custFontSizeSmall();
     @include custColorBg($colorBlueDark);
     @include custColorFnt($colorWhiteBlue);
 }
@@ -249,8 +246,8 @@ fieldset {
 
 .contact-form {
     padding: 1em 1em 1em 1em;
-    
-    @include custFontSizeExtraSmall();
+
+    @include custFontSizeSmall();
 }
 
 .contact-form input {
@@ -266,7 +263,7 @@ fieldset {
     width: 100%;
 
     @include custFontFamBasic();
-    @include custFontSizeExtraSmall();
+    @include custFontSizeSmall();
 }
 
 .submit-button {

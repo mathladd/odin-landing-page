@@ -27,16 +27,17 @@ $colorRedDark: #770000;
 
 
 /* common functions */
-@mixin custStyleHTML() {
-    font-size: 62.5%;
-}
-
 @mixin custStyleDoc() {
-    margin: 0;
-    min-width: 100%;
-    min-height: 100%;
-    // display: flex;
-    @include custFontFamBasic();
+    html {
+        font-size: 62.5%;
+    }
+    html, 
+    body {
+        margin: 0;
+        min-width: 100%;
+        min-height: 100%;
+        @include custFontFamBasic();
+    }
 }
 
 @mixin custStyleBigContainer() {
