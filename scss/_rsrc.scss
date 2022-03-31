@@ -1,8 +1,9 @@
 
 
 /* colors */
-$colorWhiteRed: #ebe2e2;
-$colorWhiteBlue: #e5e7ec;
+$colorWhiteRed: #f3e9e9;
+$colorWhiteBlue: #e9ecf3;
+$colorWhiteYellow: #f3f3e9;
 
 $colorGreyLight: #e0e0e0;
 $colorOrangeLight: #ffdfaf;
@@ -12,6 +13,7 @@ $colorOrangePastel: #ffc16f;
 $colorPinkPastel: #ffa1dd;
 $colorRedPastel: #ff9e9e;
 
+$colorWhite: #ffffff;
 $colorGrey: #8d8d8d;
 $colorBlue: #3882F6;
 $colorOrange: #ff941b;
@@ -43,8 +45,9 @@ $colorRedDark: #770000;
         @include custFontSizeBody();
     }
 
-    .big-container {
-        padding: 5em 10em 5em 10em;
+    a {
+        text-decoration: none;
+        color: white;
     }
 }
 
@@ -55,12 +58,32 @@ $colorRedDark: #770000;
     justify-content: center;
 }
 
-@mixin custColorBg($bgcColor) {
-    background-color: $bgcColor;
+@mixin custColorBg($backgroundColor) {
+    background-color: $backgroundColor;
 }
 
-@mixin custColorFnt($color) {
+@mixin custColorFt($color) {
     color: $color;
+}
+
+@mixin custThemeBlueDarkWhite() {
+    @include custColorBg($colorBlueDark);
+    @include custColorFt($colorWhiteBlue);
+}
+
+@mixin custThemeBlueWhite() {
+    @include custColorBg($colorBlue);
+    @include custColorFt($colorWhiteBlue);
+}
+
+@mixin custThemeWhiteBlueBlueDark() {
+    @include custColorBg($colorWhiteBlue);
+    @include custColorFt($colorBlueDark);
+}
+
+@mixin custThemeGreyLightBlueDark() {
+    @include custColorBg($colorGreyLight);
+    @include custColorFt($colorBlueDark);
 }
 
 @mixin custFontSizeBody() {

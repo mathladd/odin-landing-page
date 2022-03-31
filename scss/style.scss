@@ -5,34 +5,23 @@
 @include custStyleDoc();
 
 
-a {
-    text-decoration: none;
-    color: white;
-}
-
-
 .all__h1-container {
     @include custFlexCenterAll();
     flex-flow: row wrap;
     justify-content: space-between;
 
-    padding-top: 2em;
-    padding-bottom: 3em;
-    @include custColorBg($colorBlueDark);
+    @include custThemeBlueDarkWhite();
 }
 
 .all__header-logo {
     flex: 2;
 
-    @include custColorFnt($colorWhiteBlue);
     font-weight: 900;
 }
 
 .all__header-link {
     @include custFlexCenterAll();
     padding: 0em 0.8em 0em 0.8em;
-
-    @include custColorFnt($colorWhiteBlue);
 }
 
 .all__footer-container {
@@ -40,17 +29,14 @@ a {
     text-align: center;
     padding: 3em 10em 3em 10em;
 
-    @include custColorBg($colorBlueDark);
-    @include custColorFnt($colorWhiteBlue);
+    @include custThemeBlueDarkWhite();
 }
 
 .index__c1-container {
     @include custFlexCenterAll();
     justify-content: space-between;
-    
-    padding-top: 3em;
-    padding-bottom: 8em;
-    @include custColorBg($colorBlueDark);
+
+    @include custThemeBlueDarkWhite();
 }
 
 .index__subheader-texts {
@@ -61,14 +47,12 @@ a {
 .index__subheader-text1 {
     margin: 0;
 
-    @include custColorFnt($colorWhiteBlue);
     font-weight: 900;
 }
 
 .index__subheader-text2 {
     margin: 0;
     
-    @include custColorFnt($colorWhiteBlue);
     font-weight: 100;
 }
 
@@ -77,8 +61,7 @@ a {
     border-radius: 7px;
     padding: 0.3em 2em 0.3em 2em;
 
-    @include custColorBg($colorBlue);
-    @include custColorFnt($colorWhiteBlue);
+    @include custThemeBlueWhite();
     white-space: nowrap;
     font-weight: 700;
 
@@ -104,6 +87,7 @@ a {
     flex-flow: row wrap;
     padding-top: 3em;
     padding-bottom: 8em;
+    @include custThemeWhiteBlueBlueDark();
 } 
 
 .index__content-title {
@@ -111,7 +95,6 @@ a {
     margin: auto;
     padding: 1em 0em 1em 0em;
     
-    @include custColorFnt($colorBlueDark);
     font-weight: 900;
     text-align: center;
 }
@@ -145,7 +128,6 @@ a {
 
 .index__content-box-content {
     text-align: center;
-    color: $colorGreyHeavy;
     height: 1em;
 }
 
@@ -154,7 +136,7 @@ a {
     padding-top: 3em;
     padding-bottom: 3em;
 
-    @include custColorBg($colorWhiteBlue);
+    @include custThemeGreyLightBlueDark();
 }
 
 .index__quote {
@@ -163,7 +145,6 @@ a {
 
     font-weight: 100;
     font-style: italic;
-    @include custColorFnt($colorBlueDark);
 }
 
 .index__quote-author {
@@ -179,21 +160,19 @@ a {
 }
 
 .index__cta {
-    @include custFlexCenterAll();
-    padding: 2em 6em 2em 6em;
     border-radius: 10px;
 
-    @include custColorBg($colorBlue);
-    @include custColorFnt($colorWhiteBlue);
+    @include custThemeBlueWhite();
 }
 
 .index__cta-texts {
     flex: 1;
-    padding-right: 3em;
+    margin-bottom: 2em;
 }
 
 .index__cta-text1 {
     margin: 0em 0em 0.4em 0em;
+
     font-weight: 900;
 }
 
@@ -214,21 +193,14 @@ a {
     @include custFlexCenterAll();
     flex-flow: column wrap;
     min-width: 20em;
-    margin: 2em 4em 4em 4em;
+    margin-bottom: 3em;
 
-    @include custColorFnt($colorGreyDark);
-}
-
-.contact__main-form-1 {
-    min-height: 100%;
-}
-
-.contact__main-form-2 {
-    min-height: 100%;
+    @include custColorBg($colorWhite);
+    @include custColorFt($colorBlueDark);
 }
 
 .contact__contact-form {
-    padding: 1em 1em 1em 1em;
+    padding: 1em;
 }
 
 .contact__contact-form input {
@@ -252,8 +224,7 @@ a {
     border: none;
     border-radius: 10px;
 
-    @include custColorBg($colorBlue);
-    @include custColorFnt($colorWhiteBlue);
+    @include custThemeBlueDarkWhite();
     font-weight: 900;
     cursor: pointer;
 }
@@ -262,34 +233,80 @@ a {
     @include custColorBg($colorBlueHeavy)
 }
 
+.store__c1-container {
+    @include custThemeWhiteBlueBlueDark();
+}
 
-@media only screen and (min-width: 40.1rem) and (max-width: 96rem) {
-    /* Tablet */
+.store__item-list {
+    @include custFlexCenterAll();
+    flex-flow: row wrap;
+    border: 1px solid black;
+}
+
+.store__item {
+    @include custFlexCenterAll();
+    flex-flow: row wrap;
+    border: 1px solid $colorGrey;
+    width: 50%;
+}
+
+.store__item-pic {
+    @include custFlexCenterAll();
+    width: 100%;
+    margin-bottom: 1em;
+}
+
+.store__item-pic div {
+    border:1px solid $colorGrey;
+    width: 100%;
+    height: 10em;
+}
+
+
+.store__item-name {
+    text-align: center;
+}
+
+.store__c2-container {
+    @include custThemeGreyLightBlueDark();
+}
+
+
+@media only screen and (min-width: 250px) and (max-width: 500px) {
+    /* Phone */
     .all__header-logo,
     .index__subheader-text1,
     .index__content-title,
     .index__quote {
-        @include custFontSizeExtraLarge();
+        @include custFontSizeMed();
     }
 
     .index__subheader-text2,
     .index__signup-button,
     .index__quote-author,
     .index__cta-text1,
-    .contact__contact-form,
+    .contact__fieldset,
     .contact__moreInfo {
-        @include custFontSizeVeryLarge();
+        @include custFontSizeSmall();
     }
 
     .all__footer-container,
     .all__header-link,
     .index__content-box-content,
     .index__cta-text2 {
-        @include custFontSizeLarge();
+        @include custFontSizeExtraSmall();
+    }
+
+    .big-container {
+        padding: 2em 2em 2em 2em;
+    }
+
+    .index__cta {
+        padding: 2em 2em 2em 2em;
     }
 }
 
-@media only screen and (min-width: 40.1rem) and (max-width: 96rem) {
+@media only screen and (min-width: 501px) and (max-width: 1023px) {
     /* Tablet */
     .all__header-logo,
     .index__subheader-text1,
@@ -309,16 +326,24 @@ a {
     .all__header-link,
     .index__content-box-content,
     .index__cta-text2,
-    .contact__contact-form,
+    .contact__fieldset,
     .contact__moreInfo {
         @include custFontSizeMed();
     }
+
+    .big-container {
+        padding: 5em 5em 5em 5em;
+    }
+
+    .index__cta {
+        padding: 3em 3em 3em 3em;
+    }
 }
 
-@media only screen and (min-width: 96.1rem) {
-    /* Desktop */
-    .html {
-        width: 96rem;
+@media only screen and (min-width: 1024px) {
+    /* Laptop */
+    html {
+        width: 102.4em;
         margin: 0 auto;
     }
 
@@ -340,8 +365,16 @@ a {
     .all__header-link,
     .index__content-box-content,
     .index__cta-text2,
-    .contact__contact-form,
+    .contact__fieldset,
     .contact__moreInfo {
         @include custFontSizeSmall();
+    }
+
+    .big-container {
+        padding: 5em 5em 5em 5em;
+    }
+
+    .index__cta {
+        padding: 2em 6em 2em 6em;
     }
 }
