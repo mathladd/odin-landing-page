@@ -148,6 +148,7 @@ a {
     @include custFontSizeSmall();
     text-align: center;
     color: $colorGreyHeavy;
+    height: 1em;
 }
 
 .c3-container {
