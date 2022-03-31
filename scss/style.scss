@@ -4,19 +4,15 @@
 
 @include custStyleDoc();
 
+
 a {
     text-decoration: none;
     color: white;
 }
 
-.big-container {
-    @include custStyleBigContainer();
-}
 
-
-.h1-container {
+.all__h1-container {
     @include custFlexCenterAll();
-    @include custStyleBigContainer();
     flex-flow: row wrap;
     justify-content: space-between;
 
@@ -25,15 +21,15 @@ a {
     @include custColorBg($colorBlueDark);
 }
 
-.header-logo {
+.all__header-logo {
     flex: 2;
 
     @include custFontSizeLarge();
+    @include custColorFnt($colorWhiteBlue);
     font-weight: 900;
-    color: #F9FAF8;
 }
 
-.header-link {
+.all__header-link {
     @include custFlexCenterAll();
     padding: 0em 0.8em 0em 0.8em;
 
@@ -41,22 +37,21 @@ a {
     color: #E5E7EB;
 }
 
-.c1-container {
+.index__c1-container {
     @include custFlexCenterAll();
     justify-content: space-between;
-    @include custStyleBigContainer();
     
     padding-top: 3em;
     padding-bottom: 8em;
     @include custColorBg($colorBlueDark);
 }
 
-.subheader-texts {
+.index__subheader-texts {
     flex: 0.5;
     padding-right: 3em;
 }
 
-.subheader-text1 {
+.index__subheader-text1 {
     margin: 0;
 
     @include custFontSizeLarge();
@@ -64,7 +59,7 @@ a {
     font-weight: 900;
 }
 
-.subheader-text2 {
+.index__subheader-text2 {
     margin: 0;
     
     @include custFontSizeMed();
@@ -72,7 +67,7 @@ a {
     font-weight: 100;
 }
 
-.signup-button {
+.index__signup-button {
     width: fit-content;
     border-radius: 7px;
     padding: 0.3em 2em 0.3em 2em;
@@ -84,29 +79,28 @@ a {
 
 }
 
-.signup-button1 {
+.index__signup-button1 {
     margin: 1em 0em 1em 0em;
 }
 
-.subheader-img {
+.index__subheader-img {
     @include custFlexCenterAll();
     flex: 0.5;
 }
 
-.subheader-img img {
+.index__subheader-img img {
     max-width: 100%;
     max-height: 100%;
 }
 
-.c2-container {
-    @include custStyleBigContainer();
+.index__c2-container {
     @include custFlexCenterAll();
     flex-flow: row wrap;
     padding-top: 3em;
     padding-bottom: 8em;
 } 
 
-.content-title {
+.index__content-title {
     width: 100%;
     margin: auto;
     padding: 1em 0em 1em 0em;
@@ -117,19 +111,19 @@ a {
     text-align: center;
 }
 
-.content-box-container {
+.index__content-box-container {
     @include custFlexCenterAll();
     flex-flow: row wrap;
 }
 
-.content-box {
+.index__content-box {
     width: 8em;
     margin-left: 2em;
     margin-right: 2em;
     margin-bottom: 2em;
 }
 
-.content-box-box {
+.index__content-box-box {
     width: 100%;
     height: 8em;
     margin-bottom: 0.7em;
@@ -138,28 +132,27 @@ a {
     border-radius: 15px;
 }
 
-.content-box-box img {
+.index__content-box-box img {
     max-width: 100%;
     height: 8em;
     border-radius: 10px;
 }
 
-.content-box-content {
+.index__content-box-content {
     @include custFontSizeSmall();
     text-align: center;
     color: $colorGreyHeavy;
     height: 1em;
 }
 
-.c3-container {
-    @include custStyleBigContainer();
+.index__c3-container {
     padding-top: 3em;
     padding-bottom: 3em;
 
     @include custColorBg($colorWhiteBlue);
 }
 
-.quote {
+.index__quote {
     padding-top: 2em;
     margin-bottom: 0.8em;
 
@@ -169,7 +162,7 @@ a {
     @include custFontSizeLarge();
 }
 
-.quote-author {
+.index__quote-author {
     padding-bottom: 3em;
 
     @include custFontSizeMed();
@@ -177,13 +170,12 @@ a {
     font-weight: 900;
 }
 
-.c4-container {
-    @include custStyleBigContainer();
+.index__c4-container {
     padding-top: 5em;
     padding-bottom: 6em;
 }
 
-.cta {
+.index__cta {
     @include custFlexCenterAll();
     padding: 2em 6em 2em 6em;
     border-radius: 10px;
@@ -192,33 +184,33 @@ a {
     @include custColorFnt($colorWhiteBlue);
 }
 
-.cta-texts {
+.index__cta-texts {
     flex: 1;
     padding-right: 3em;
 }
 
-.cta-text1 {
+.index__cta-text1 {
     margin: 0em 0em 0.4em 0em;
     font-weight: 900;
 
     @include custFontSizeMed();
 }
 
-.cta-text2 {
+.index__cta-text2 {
     margin: 0px 0px 0px 0px;
 
     @include custFontSizeSmall();
     font-weight: 100;
 }
 
-.signup-button2 {
+.index__signup-button2 {
     width: fit-content;
     border-style: solid;
     border-color: $colorWhiteBlue;
     border-width: 2px;
 }
 
-.footer-container {
+.all__footer-container {
     @include custFlexCenterAll();
     text-align: center;
     padding: 3em 10em 3em 10em;
@@ -232,7 +224,7 @@ fieldset {
     @include custFlexCenterAll();
     flex-flow: column wrap;
     min-width: 20em;
-    margin: 2em 4em 2em 4em;
+    margin: 2em 4em 4em 4em;
 
     @include custColorFnt($colorGreyDark);
 }
@@ -280,4 +272,17 @@ fieldset {
 
 .submit-button:active {
     @include custColorBg($colorBlueHeavy)
+}
+
+
+@media only screen and (min-width: 40.1rem) and (max-width: 96rem) {
+    /* Tablet */
+}
+
+@media only screen and (min-width: 96.1rem) {
+    /* Desktop */
+    .html {
+        width: 96rem;
+        margin: 0 auto;
+    }
 }

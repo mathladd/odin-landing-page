@@ -28,21 +28,22 @@ $colorRedDark: #770000;
 
 /* common functions */
 @mixin custStyleDoc() {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        @include custFontFamBasic();
+      }
+
     html {
         font-size: 62.5%;
     }
-    html, 
-    body {
-        margin: 0;
-        min-width: 100%;
-        min-height: 100%;
-        @include custFontFamBasic();
+
+    .big-container {
+        padding: 5em 10em 5em 10em;
     }
 }
 
-@mixin custStyleBigContainer() {
-    padding: 5em 10em 5em 10em;
-}
 
 @mixin custFlexCenterAll() {
     display: flex;
@@ -58,38 +59,39 @@ $colorRedDark: #770000;
     color: $color;
 }
 
-@mixin custFontSizeHTML() {
-    font-size: 62.5%;
-}
-
 @mixin custFontSizeBody() {
-    font-size: 14px;
-    font-size: 1.4rem;
+    font-size: 16px;
+    font-size: 1.6rem;
 }
 
 @mixin custFontSizeExtraLarge() {
-    font-size: 57px;
-    font-size: 5.7rem;
+    font-size: 60px;
+    font-size: 6rem;
 }
 
 @mixin custFontSizeLarge() {
-    font-size: 36px;
-    font-size: 3.6rem;
+    font-size: 40px;
+    font-size: 4.0rem;
+}
+
+@mixin custFontSizeMedLarge() {
+    font-size: 30px;
+    font-size: 3.0rem;
 }
 
 @mixin custFontSizeMed() {
-    font-size: 22px;
-    font-size: 2.2rem;
+    font-size: 24px;
+    font-size: 2.4rem;
 }
 
 @mixin custFontSizeSmall() {
-    font-size: 14px;
-    font-size: 1.4rem;
+    font-size: 20px;
+    font-size: 2.0rem;
 }
 
 @mixin custFontSizeExtraSmall() {
-    font-size: 8.75px;
-    font-size: 0.875rem;
+    font-size: 16px;
+    font-size: 1.6rem;
 }
 
 @mixin custFontFamMono() {
