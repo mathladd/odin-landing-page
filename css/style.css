@@ -478,9 +478,8 @@ template {
 }
 
 .contact__map {
-  height: 20em;
-  width: 30em;
   margin: 1em;
+  width: 25em;
 }
 
 .contact__map iframe {
@@ -592,6 +591,10 @@ template {
   .index__cta {
     padding: 2em 2em 2em 2em;
   }
+
+  .contact__map {
+    height: 20em;
+  }
 }
 @media only screen and (min-width: 350.1px) and (max-width: 700px) {
   /* Phone */
@@ -632,6 +635,10 @@ template {
 
   .index__cta {
     padding: 2em 2em 2em 2em;
+  }
+
+  .contact__map {
+    height: 20em;
   }
 }
 @media only screen and (min-width: 700.1px) and (max-width: 1023px) {

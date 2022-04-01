@@ -257,9 +257,8 @@
 }
 
 .contact__map {
-    height: 20em;
-    width: 30em;
     margin: 1em;
+    width: 25em;
 }
 
 .contact__map iframe {
@@ -361,6 +360,10 @@
     .index__cta {
         padding: 2em 2em 2em 2em;
     }
+
+    .contact__map {
+        height: 20em;
+    }
 }
 
 @media only screen and (min-width: 350.1px) and (max-width: 700px) {
@@ -398,6 +401,10 @@
 
     .index__cta {
         padding: 2em 2em 2em 2em;
+    }
+
+    .contact__map {
+        height: 20em;
     }
 }
 
@@ -446,7 +453,6 @@
         flex: 1;
         height: 40em;
     }
-    
 }
 
 @media only screen and (min-width: 1023.1px) {
@@ -503,3 +509,4 @@
         height: 45em;
     }
 }
+
