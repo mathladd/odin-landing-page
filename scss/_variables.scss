@@ -1,24 +1,10 @@
 
-/* colors */
-$colorWhite1: #ffffff;
-$colorWhiteRed: #f3e9e9;
-$colorWhiteBlue: #e9ecf3;
-$colorWhiteYellow: #f3f3e9;
 
-$colorGrey1: #e0e0e0;
-$colorGrey3: #8d8d8d;
-
-$colorOrange1: #ffedd5;
-$colorOrange2: #fed7aa;
-$colorOrange3: #fdba74;
-$colorOrange4: #fb923c;
-$colorOrange5: #f97316;
-$colorOrange6: #ea580c;
-$colorOrange7: #c2410c;
-$colorOrange8: #9a3412;
-$colorOrange9: #7c2d12;
-$colorOrange10: #581802;
-
+/** colors 
+* source: https://tailwindcss.com/docs/customizing-colors 
+*
+*/
+$colorWhite: #ffffff;
 
 $colorGrey1: #f3f4f6;
 $colorGrey2: #e5e7eb;
@@ -28,8 +14,27 @@ $colorGrey5: #6b7280;
 $colorGrey6: #4b5563;
 $colorGrey7: #374151;
 $colorGrey8: #1f2937;
-$colorGrey9: #111827;
-$colorGrey10: #121724;
+$colorGrey9: #111827;  /* blueish tone */
+
+$colorNeutral1: #f5f5f5;
+$colorNeutral2: #e5e5e5;
+$colorNeutral3: #d4d4d4;
+$colorNeutral4: #a3a3a3;
+$colorNeutral5: #737373;
+$colorNeutral6: #525252;
+$colorNeutral7: #404040;
+$colorNeutral8: #262626;
+$colorNeutral9: #171717;  /* real grey */
+
+$colorStone1: #f5f5f4;
+$colorStone2: #e7e5e4;
+$colorStone3: #d6d3d1;
+$colorStone4: #a8a29e;
+$colorStone5: #78716c;
+$colorStone6: #57534e;
+$colorStone7: #44403c;
+$colorStone8: #292524;
+$colorStone9: #1c1917;  /* redish tone */
 
 $colorRed1: #ffe4e6;
 $colorRed2: #fecdd3;
@@ -40,7 +45,76 @@ $colorRed6: #e11d48;
 $colorRed7: #be123c;
 $colorRed8: #9f1239;
 $colorRed9: #881337;
-$colorRed10: #300f17;
+
+$colorRose1: #ffe4e6;
+$colorRose2: #fecdd3;
+$colorRose3: #fda4af;
+$colorRose4: #fb7185;
+$colorRose5: #f43f5e;
+$colorRose6: #e11d48;
+$colorRose7: #be123c;
+$colorRose8: #9f1239;
+$colorRose9: #881337;
+
+$colorPink1: #fce7f3;
+$colorPink2: #fbcfe8;
+$colorPink3: #f9a8d4;
+$colorPink4: #f472b6;
+$colorPink5: #ec4899;
+$colorPink6: #db2777;
+$colorPink7: #be185d;
+$colorPink8: #9d174d;
+$colorPink9: #831843;
+
+$colorOrange1: #ffedd5;
+$colorOrange2: #fed7aa;
+$colorOrange3: #fdba74;
+$colorOrange4: #fb923c;
+$colorOrange5: #f97316;
+$colorOrange6: #ea580c;
+$colorOrange7: #c2410c;
+$colorOrange8: #9a3412;
+$colorOrange9: #7c2d12;
+
+$colorAmber1: #fef3c7;
+$colorAmber2: #fde68a;
+$colorAmber3: #fcd34d;
+$colorAmber4: #fbbf24;
+$colorAmber5: #f59e0b;
+$colorAmber6: #d97706;
+$colorAmber7: #b45309;
+$colorAmber8: #92400e;
+$colorAmber9: #78350f;
+
+$colorLime1: #ecfccb;
+$colorLime2: #d9f99d;
+$colorLime3: #bef264;
+$colorLime4: #a3e635;
+$colorLime5: #84cc16;
+$colorLime6: #65a30d;
+$colorLime7: #4d7c0f;
+$colorLime8: #3f6212;
+$colorLime9: #365314;
+
+$colorEmerald1: #d1fae5;
+$colorEmerald2: #a7f3d0;
+$colorEmerald3: #6ee7b7;
+$colorEmerald4: #34d399;
+$colorEmerald5: #10b981;
+$colorEmerald6: #059669;
+$colorEmerald7: #047857;
+$colorEmerald8: #065f46;
+$colorEmerald9: #064e3b;
+
+$colorTeal1: #ccfbf1;
+$colorTeal2: #99f6e4;
+$colorTeal3: #5eead4;
+$colorTeal4: #2dd4bf;
+$colorTeal5: #14b8a6;
+$colorTeal6: #0d9488;
+$colorTeal7: #0f766e;
+$colorTeal8: #115e59;
+$colorTeal9: #134e4a;
 
 $colorCyan1: #cffafe;
 $colorCyan2: #a5f3fc;
@@ -51,7 +125,16 @@ $colorCyan6: #0891b2;
 $colorCyan7: #0e7490;
 $colorCyan8: #155e75;
 $colorCyan9: #164e63;
-$colorCyan10: #0f2730;
+
+$colorSky1: #e0f2fe;
+$colorSky2: #bae6fd;
+$colorSky3: #7dd3fc;
+$colorSky4: #38bdf8;
+$colorSky5: #0ea5e9;
+$colorSky6: #0284c7;
+$colorSky7: #0369a1;
+$colorSky8: #075985;
+$colorSky9: #0c4a6e;
 
 $colorBlue1: #dbeafe;
 $colorBlue2: #bfdbfe;
@@ -62,6 +145,23 @@ $colorBlue6: #2563eb;
 $colorBlue7: #1d4ed8;
 $colorBlue8: #1e40af;
 $colorBlue9: #1e3a8a;
-$colorBlue10: #0f1a30;
 
-$colorBrown9: #270d00;
+$colorIndigo1: #e0e7ff;
+$colorIndigo2: #c7d2fe;
+$colorIndigo3: #a5b4fc;
+$colorIndigo4: #818cf8;
+$colorIndigo5: #6366f1;
+$colorIndigo6: #4f46e5;
+$colorIndigo7: #4338ca;
+$colorIndigo8: #3730a3;
+$colorIndigo9: #312e81;
+
+$colorPurple1: #f3e8ff;
+$colorPurple2: #e9d5ff;
+$colorPurple3: #d8b4fe;
+$colorPurple4: #c084fc;
+$colorPurple5: #a855f7;
+$colorPurple6: #9333ea;
+$colorPurple7: #7e22ce;
+$colorPurple8: #6b21a8;
+$colorPurple9: #581c87;

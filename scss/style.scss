@@ -19,7 +19,7 @@
     padding-top: 1.5em;
     padding-bottom: 1.5em;
 
-    @include custThemeGrey9WhiteBlue();
+    @include custThemeGrey9Blue1();
 }
 
 .all__headers {
@@ -46,7 +46,7 @@
     padding-bottom: 2.5em;
 
     text-align: center;
-    @include custThemeGrey9WhiteBlue();
+    @include custThemeGrey9Blue1();
 }
 
 
@@ -56,7 +56,7 @@
 .index__c1-container {
     padding-top: 8em;
     @include custFlexCenterAll();
-    @include custThemeGrey9WhiteBlue();
+    @include custThemeGrey9Blue1();
 }
 
 .index__subheader-texts {
@@ -81,7 +81,7 @@
     border-radius: 7px;
     padding: 0.3em 2em 0.3em 2em;
 
-    @include custThemeBlue6WhiteBlue();
+    @include custThemeBlue6Blue1();
     white-space: nowrap;
     font-weight: 700;
 
@@ -107,7 +107,7 @@
 
 .index__c2-container {
     @include custFlexCenterAll();
-    @include custThemeWhiteBlueBlue10();
+    @include custThemeGrey2Grey9();
     padding-top: 4em;
 }
 
@@ -155,7 +155,7 @@
 .index__c3-container,
 .contact__c2-container {
     @include custFlexCenterAll();
-    @include custThemeGrey3Grey10();
+    @include custThemeGrey3Grey9();
 }
 
 .quote-container {
@@ -175,14 +175,14 @@
 
 .index__c4-container {
     @include custFlexCenterAll();
-    @include custThemeWhiteBlueBlue10();
+    @include custThemeGrey2Grey9();
 }
 
 .index__cta {
     max-width: 50em;
     border-radius: 10px;
 
-    @include custThemeBlue6WhiteBlue();
+    @include custThemeBlue6Blue1();
 }
 
 .index__cta-texts {
@@ -205,7 +205,7 @@
 .index__signup-button2 {
     width: fit-content;
     border-style: solid;
-    border-color: $colorWhiteBlue;
+    border-color: $colorBlue1;
     border-width: 2px;
 }
 
@@ -216,7 +216,7 @@
 .contact__c1-container {
     @include custFlexCenterAll();
     padding-top: 8em;
-    @include custThemeWhiteBlueBlue10();
+    @include custThemeGrey2Grey9();
 }
 
 .contact__contact-form {
@@ -229,8 +229,8 @@
     flex-flow: column wrap;
     max-width: 20em;
 
-    @include custColorBg($colorWhite1);
-    @include custColorFt($colorBlue10);
+    @include custColorBg($colorWhite);
+    @include custColorFt($colorGrey9);
 }
 
 .contact__contact-input {
@@ -265,7 +265,7 @@
     border: none;
     border-radius: 10px;
 
-    @include custThemeGrey9WhiteBlue();
+    @include custThemeGrey9Blue1();
     font-weight: 900;
     cursor: pointer;
 }
@@ -292,7 +292,7 @@
     @include custFlexCenterAll();
     padding-top: 8em;
     padding-bottom: 6em;
-    @include custThemeWhiteBlueBlue10();
+    @include custThemeGrey2Grey9();
 }
 
 .store__title {
@@ -343,7 +343,7 @@
 }
 
 .store__c2-container {
-    @include custThemeGrey3Grey10();
+    @include custThemeGrey3Grey9();
 }
 
 

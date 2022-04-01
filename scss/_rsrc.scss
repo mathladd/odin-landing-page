@@ -19,29 +19,24 @@
     color: $color;
 }
 
-@mixin custThemeGrey9WhiteBlue() {
+@mixin custThemeGrey9Blue1() {
     @include custColorBg($colorGrey9);
-    @include custColorFt($colorWhiteBlue);
+    @include custColorFt($colorBlue1);
 }
 
-@mixin custThemeBlue6WhiteBlue() {
+@mixin custThemeBlue6Blue1() {
     @include custColorBg($colorBlue6);
-    @include custColorFt($colorWhiteBlue);
+    @include custColorFt($colorBlue1);
 }
 
-@mixin custThemeWhiteBlueBlue10() {
-    @include custColorBg($colorWhiteBlue);
-    @include custColorFt($colorBlue10);
+@mixin custThemeGrey2Grey9() {
+    @include custColorBg($colorGrey2);
+    @include custColorFt($colorGrey9);
 }
 
-@mixin custThemeGrey1Blue10() {
-    @include custColorBg($colorGrey1);
-    @include custColorFt($colorBlue10);
-}
-
-@mixin custThemeGrey3Grey10() {
+@mixin custThemeGrey3Grey9() {
     @include custColorBg($colorGrey3);
-    @include custColorFt($colorGrey10);
+    @include custColorFt($colorGrey9);
 }
 
 @mixin custFontSizeXXL() {
