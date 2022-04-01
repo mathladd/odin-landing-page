@@ -223,8 +223,7 @@ a {
 
 .contact__contact-form input {
   width: 100%;
-  padding-top: 0.4em;
-  padding-bottom: 0.4em;
+  padding: 0.4em;
   border: 1px solid #8d8d8d;
   border-radius: 4px;
 }
@@ -232,6 +231,7 @@ a {
 .contact__moreInfo {
   height: 10em;
   width: 100%;
+  padding: 0.4em;
   font-family: Helvetica, Arial, sans-serif;
 }
 

@@ -198,8 +198,7 @@
 
 .contact__contact-form input {
     width: 100%;
-    padding-top: 0.4em;
-    padding-bottom: 0.4em;
+    padding: 0.4em;
     border: 1px solid $colorGrey;
     border-radius: 4px;
 }
@@ -207,6 +206,7 @@
 .contact__moreInfo {
     height: 10em;
     width: 100%;
+    padding: 0.4em;
 
     @include custFontFamBasic();
 }
