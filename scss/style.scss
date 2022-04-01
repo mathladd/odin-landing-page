@@ -8,12 +8,24 @@
 /* =========================================================
     ALL
 ============================================================ */
+.all__big-container {
+    padding-top: 3em;
+    padding-bottom: 3em;
+}
+
 .all__h1-container {
+    position: fixed;
+    width: 100%;
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
+
+    @include custThemeBlueDarkWhite();
+}
+
+.all__headers {
     @include custFlexCenterAll();
     flex-flow: row wrap;
     justify-content: space-between;
-
-    @include custThemeBlueDarkWhite();
 }
 
 .all__header-logo {
@@ -41,6 +53,7 @@
     index.html 
 ============================================================ */
 .index__c1-container {
+    padding-top: 8em;
     @include custFlexCenterAll();
     @include custThemeBlueDarkWhite();
 }
@@ -95,6 +108,7 @@
 .contact__c1-container {
     @include custFlexCenterAll();
     flex-flow: row wrap;
+    padding-top: 8em;
 
     @include custThemeWhiteBlueBlueDark();
 } 
@@ -271,6 +285,7 @@
     store.html
 ============================================================ */
 .store__c1-container {
+    padding-top: 8em;
     @include custFlexCenterAll();
     @include custThemeWhiteBlueBlueDark();
 }
@@ -355,8 +370,9 @@
         @include custFontSizeExtraSmall();
     }
 
-    .big-container {
-        padding: 2em 2em 2em 2em;
+    .all__big-container {
+        padding-left: 2em;
+        padding-right: 2em;
     }
 
     .index__cta {
@@ -397,8 +413,9 @@
         @include custFontSizeExtraSmall();
     }
 
-    .big-container {
-        padding: 2em 2em 2em 2em;
+    .all__big-container {
+        padding-left: 2em;
+        padding-right: 2em;
     }
 
     .index__cta {
@@ -439,8 +456,9 @@
         @include custFontSizeSmall();
     }
 
-    .big-container {
-        padding: 3em 4em 3em 4em;
+    .all__big-container {
+        padding-left: 4em;
+        padding-right: 4em;
     }
 
     .index__subheader-img {
@@ -494,8 +512,9 @@
         @include custFontSizeSmall();
     }
 
-    .big-container {
-        padding: 3em 4em 3em 4em;
+    .all__big-container {
+        padding-left: 4em;
+        padding-right: 4em;
     }
 
     .index__subheader-img {
