@@ -225,7 +225,7 @@ template {
   width: 100%;
   padding-top: 1.5em;
   padding-bottom: 1.5em;
-  background-color: #1F2937;
+  background-color: #111827;
   color: #e9ecf3;
 }
 
@@ -256,8 +256,10 @@ template {
   align-items: center;
   justify-content: center;
   flex-flow: row wrap;
+  padding-top: 2.5em;
+  padding-bottom: 2.5em;
   text-align: center;
-  background-color: #1F2937;
+  background-color: #111827;
   color: #e9ecf3;
 }
 
@@ -270,7 +272,7 @@ template {
   align-items: center;
   justify-content: center;
   flex-flow: row wrap;
-  background-color: #1F2937;
+  background-color: #111827;
   color: #e9ecf3;
 }
 
@@ -293,7 +295,7 @@ template {
   width: fit-content;
   border-radius: 7px;
   padding: 0.3em 2em 0.3em 2em;
-  background-color: #3882F6;
+  background-color: #2563eb;
   color: #e9ecf3;
   white-space: nowrap;
   font-weight: 700;
@@ -320,15 +322,14 @@ template {
   image-rendering: high-quality;
 }
 
-.index__c2-container,
-.contact__c1-container {
+.index__c2-container {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-flow: row wrap;
-  padding-top: 8em;
   background-color: #e9ecf3;
-  color: #1F2937;
+  color: #0f1a30;
+  padding-top: 4em;
 }
 
 .index__content-title {
@@ -361,7 +362,7 @@ template {
   height: 80%;
   margin-bottom: 0.3em;
   border-style: solid;
-  border-color: #3882F6;
+  border-color: #3b82f6;
   border-radius: 10px;
 }
 
@@ -383,8 +384,8 @@ template {
   align-items: center;
   justify-content: center;
   flex-flow: row wrap;
-  background-color: #e0e0e0;
-  color: #1F2937;
+  background-color: #d1d5db;
+  color: #121724;
 }
 
 .quote-container {
@@ -408,13 +409,13 @@ template {
   justify-content: center;
   flex-flow: row wrap;
   background-color: #e9ecf3;
-  color: #1F2937;
+  color: #0f1a30;
 }
 
 .index__cta {
   max-width: 50em;
   border-radius: 10px;
-  background-color: #3882F6;
+  background-color: #2563eb;
   color: #e9ecf3;
 }
 
@@ -443,6 +444,16 @@ template {
 /* =========================================================
     contact.html
 ============================================================ */
+.contact__c1-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: row wrap;
+  padding-top: 8em;
+  background-color: #e9ecf3;
+  color: #0f1a30;
+}
+
 .contact__contact-form {
   display: flex;
   align-items: center;
@@ -459,7 +470,7 @@ template {
   flex-flow: column wrap;
   max-width: 20em;
   background-color: #ffffff;
-  color: #1F2937;
+  color: #0f1a30;
 }
 
 .contact__contact-input {
@@ -474,20 +485,20 @@ template {
 .contact__moreInfo {
   width: 100%;
   padding: 0.5em;
-  border: 2px solid #e0e0e0;
+  border: 2px solid #f3f4f6;
   border-radius: 4px;
 }
 
 .contact__contact-input > input:focus,
 .contact__moreInfo:focus {
   outline: none !important;
-  border-color: #3882F6;
-  box-shadow: 1px 1px 4px #bebebe;
+  border-color: #3b82f6;
+  box-shadow: 1px 1px 4px #9ca3af;
 }
 
 .contact__contact-input > input:invalid,
 .contact__moreInfo:invalid {
-  border-color: #d43c3c;
+  border-color: #e11d48;
 }
 
 .contact__submit-button {
@@ -495,14 +506,14 @@ template {
   margin: 1em;
   border: none;
   border-radius: 10px;
-  background-color: #1F2937;
+  background-color: #111827;
   color: #e9ecf3;
   font-weight: 900;
   cursor: pointer;
 }
 
 .contact__submit-button:active {
-  background-color: #184ea3;
+  background-color: #1e3a8a;
 }
 
 .contact__map {
@@ -526,7 +537,7 @@ template {
   padding-top: 8em;
   padding-bottom: 6em;
   background-color: #e9ecf3;
-  color: #1F2937;
+  color: #0f1a30;
 }
 
 .store__title {
@@ -560,7 +571,7 @@ template {
   flex-flow: row wrap;
   width: 100%;
   height: 80%;
-  border: 1px solid #8d8d8d;
+  border: 1px solid #d1d5db;
   border-radius: 10px;
   margin-bottom: 1em;
 }
@@ -581,19 +592,19 @@ template {
 
 .store__item-price {
   text-align: center;
-  color: #646464;
+  color: #374151;
   font-size: 90%;
 }
 
 .store__c2-container {
-  background-color: #e0e0e0;
-  color: #1F2937;
+  background-color: #d1d5db;
+  color: #121724;
 }
 
 /* =========================================================
     media queries
 ============================================================ */
-@media only screen and (max-width: 350px) {
+@media only screen and (max-width: 360px) {
   /* Small phones */
   .all__header-logo,
 .index__subheader-text1,
@@ -636,7 +647,7 @@ template {
     height: 20em;
   }
 }
-@media only screen and (min-width: 350.1px) and (max-width: 700px) {
+@media only screen and (min-width: 360.1px) and (max-width: 800px) {
   /* Phone */
   .all__header-logo,
 .index__subheader-text1,
@@ -684,7 +695,7 @@ template {
     height: 20em;
   }
 }
-@media only screen and (min-width: 700.1px) and (max-width: 1023px) {
+@media only screen and (min-width: 800.1px) and (max-width: 1200px) {
   /* Tablet */
   .all__header-logo,
 .index__subheader-text1,
@@ -711,12 +722,16 @@ template {
     font-size: 2.4rem;
   }
 
-  .contact__c2-container,
-.contact__fieldset,
-.contact__moreInfo,
-.store__c2-container {
+  .contact__fieldset,
+.contact__moreInfo {
     font-size: 18px;
     font-size: 1.8rem;
+  }
+
+  .contact__c2-container,
+.store__c2-container {
+    font-size: 12px;
+    font-size: 1.2rem;
   }
 
   .all__big-container {
@@ -724,12 +739,16 @@ template {
     padding-right: 4em;
   }
 
+  .all__header-link {
+    margin: 0em 0em 0em 2em;
+  }
+
   .index__subheader-img {
-    flex: 0.6;
+    flex: 0.5;
   }
 
   .index__cta {
-    padding: 3em 3em 3em 3em;
+    padding: 3em 5em 3em 5em;
   }
 
   .contact__map {
@@ -737,7 +756,7 @@ template {
     height: 40em;
   }
 }
-@media only screen and (min-width: 1023.1px) {
+@media only screen and (min-width: 1200.1px) {
   /* Laptop */
   html {
     margin: 0 auto;
@@ -770,9 +789,10 @@ template {
     font-size: 2.4rem;
   }
 
-  .contact__c2-container {
-    font-size: 18px;
-    font-size: 1.8rem;
+  .contact__c2-container,
+.store__c2-container {
+    font-size: 16px;
+    font-size: 1.6rem;
   }
 
   .all__big-container {

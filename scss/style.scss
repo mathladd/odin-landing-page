@@ -19,7 +19,7 @@
     padding-top: 1.5em;
     padding-bottom: 1.5em;
 
-    @include custThemeBlueDarkWhite();
+    @include custThemeGrey9WhiteBlue();
 }
 
 .all__headers {
@@ -42,9 +42,11 @@
 
 .all__footer-container {
     @include custFlexCenterAll();
-    text-align: center;
+    padding-top: 2.5em;
+    padding-bottom: 2.5em;
 
-    @include custThemeBlueDarkWhite();
+    text-align: center;
+    @include custThemeGrey9WhiteBlue();
 }
 
 
@@ -54,7 +56,7 @@
 .index__c1-container {
     padding-top: 8em;
     @include custFlexCenterAll();
-    @include custThemeBlueDarkWhite();
+    @include custThemeGrey9WhiteBlue();
 }
 
 .index__subheader-texts {
@@ -79,7 +81,7 @@
     border-radius: 7px;
     padding: 0.3em 2em 0.3em 2em;
 
-    @include custThemeBlueWhite();
+    @include custThemeBlue6WhiteBlue();
     white-space: nowrap;
     font-weight: 700;
 
@@ -103,13 +105,11 @@
     image-rendering: high-quality;
 }
 
-.index__c2-container,
-.contact__c1-container {
+.index__c2-container {
     @include custFlexCenterAll();
-    padding-top: 8em;
-
-    @include custThemeWhiteBlueBlueDark();
-} 
+    @include custThemeWhiteBlueBlue10();
+    padding-top: 4em;
+}
 
 .index__content-title {
     width: 100%;
@@ -136,7 +136,7 @@
     height: 80%;
     margin-bottom: 0.3em;
     border-style: solid;
-    border-color: $colorBlue;
+    border-color: $colorBlue5;
     border-radius: 10px;
 }
 
@@ -155,7 +155,7 @@
 .index__c3-container,
 .contact__c2-container {
     @include custFlexCenterAll();
-    @include custThemeGreyLightBlueDark();
+    @include custThemeGrey3Grey10();
 }
 
 .quote-container {
@@ -169,21 +169,20 @@
 }
 
 .index__quote-author {
-
     text-align: right;
     font-weight: 900;
 }
 
 .index__c4-container {
     @include custFlexCenterAll();
-    @include custThemeWhiteBlueBlueDark();
+    @include custThemeWhiteBlueBlue10();
 }
 
 .index__cta {
     max-width: 50em;
     border-radius: 10px;
 
-    @include custThemeBlueWhite();
+    @include custThemeBlue6WhiteBlue();
 }
 
 .index__cta-texts {
@@ -214,6 +213,12 @@
 /* =========================================================
     contact.html
 ============================================================ */
+.contact__c1-container {
+    @include custFlexCenterAll();
+    padding-top: 8em;
+    @include custThemeWhiteBlueBlue10();
+}
+
 .contact__contact-form {
     @include custFlexCenterAll();
     margin: 1em;
@@ -224,8 +229,8 @@
     flex-flow: column wrap;
     max-width: 20em;
 
-    @include custColorBg($colorWhite);
-    @include custColorFt($colorBlueDark);
+    @include custColorBg($colorWhite1);
+    @include custColorFt($colorBlue10);
 }
 
 .contact__contact-input {
@@ -240,18 +245,18 @@
 .contact__moreInfo {
     width: 100%;
     padding: 0.5em;
-    border: 2px solid $colorGreyLight;
+    border: 2px solid $colorGrey1;
     border-radius: 4px;
 }
 .contact__contact-input > input:focus,
 .contact__moreInfo:focus {
     outline: none !important;
-    border-color: $colorBlue;
-    box-shadow: 1px 1px 4px $colorGreyPastel;
+    border-color: $colorBlue5;
+    box-shadow: 1px 1px 4px $colorGrey4;
 }
 .contact__contact-input > input:invalid,
 .contact__moreInfo:invalid {
-    border-color: $colorRed;
+    border-color: $colorRed6;
 }
 
 .contact__submit-button {
@@ -260,13 +265,13 @@
     border: none;
     border-radius: 10px;
 
-    @include custThemeBlueDarkWhite();
+    @include custThemeGrey9WhiteBlue();
     font-weight: 900;
     cursor: pointer;
 }
 
 .contact__submit-button:active {
-    @include custColorBg($colorBlueHeavy)
+    @include custColorBg($colorBlue9)
 }
 
 .contact__map {
@@ -287,7 +292,7 @@
     @include custFlexCenterAll();
     padding-top: 8em;
     padding-bottom: 6em;
-    @include custThemeWhiteBlueBlueDark();
+    @include custThemeWhiteBlueBlue10();
 }
 
 .store__title {
@@ -312,7 +317,7 @@
     @include custFlexCenterAll();
     width: 100%;
     height: 80%;
-    border:1px solid $colorGrey;
+    border:1px solid $colorGrey3;
     border-radius: 10px;
     margin-bottom: 1em;
 }
@@ -333,19 +338,19 @@
 
 .store__item-price {
     text-align: center;
-    @include custColorFt($colorGreyHeavy);
+    @include custColorFt($colorGrey7);
     font-size: 90%;
 }
 
 .store__c2-container {
-    @include custThemeGreyLightBlueDark();
+    @include custThemeGrey3Grey10();
 }
 
 
 /* =========================================================
     media queries
 ============================================================ */
-@media only screen and (max-width: 350px) {
+@media only screen and (max-width: 360px) {
     /* Small phones */
     .all__header-logo,
     .index__subheader-text1,
@@ -386,7 +391,7 @@
     }
 }
 
-@media only screen and (min-width: 350.1px) and (max-width: 700px) {
+@media only screen and (min-width: 360.1px) and (max-width: 800px) {
     /* Phone */
     .all__header-logo,
     .index__subheader-text1,
@@ -431,7 +436,7 @@
     }
 }
 
-@media only screen and (min-width: 700.1px) and (max-width: 1023px) {
+@media only screen and (min-width: 800.1px) and (max-width: 1200px) {
     /* Tablet */
     .all__header-logo,
     .index__subheader-text1,
@@ -455,11 +460,14 @@
         @include custFontSizeMS();
     }
 
-    .contact__c2-container,
     .contact__fieldset,
-    .contact__moreInfo,
-    .store__c2-container {
+    .contact__moreInfo {
         @include custFontSizeS();
+    }
+
+    .contact__c2-container,
+    .store__c2-container {
+        @include custFontSizeXXS();
     }
 
     .all__big-container {
@@ -467,12 +475,16 @@
         padding-right: 4em;
     }
 
+    .all__header-link {
+        margin: 0em 0em 0em 2em;
+    }
+
     .index__subheader-img {
-        flex: 0.6;
+        flex: 0.5;
     }
 
     .index__cta {
-        padding: 3em 3em 3em 3em;
+        padding: 3em 5em 3em 5em;
     }
 
     .contact__map {
@@ -481,7 +493,7 @@
     }
 }
 
-@media only screen and (min-width: 1023.1px) {
+@media only screen and (min-width: 1200.1px) {
     /* Laptop */
     html {
         margin: 0 auto;
@@ -511,8 +523,9 @@
         @include custFontSizeMS();
     }
 
-    .contact__c2-container {
-        @include custFontSizeS();
+    .contact__c2-container,
+    .store__c2-container {
+        @include custFontSizeXS();
     }
 
     .all__big-container {

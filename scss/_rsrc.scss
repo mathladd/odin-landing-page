@@ -1,33 +1,6 @@
 
 @import "./_reset";
-
-
-/* colors */
-$colorWhiteRed: #f3e9e9;
-$colorWhiteBlue: #e9ecf3;
-$colorWhiteYellow: #f3f3e9;
-
-$colorGreyLight: #e0e0e0;
-$colorOrangeLight: #ffdfaf;
-
-$colorGreyPastel: #bebebe;
-$colorOrangePastel: #ffc16f;
-$colorPinkPastel: #ffa1dd;
-$colorRedPastel: #ff9e9e;
-
-$colorWhite: #ffffff;
-$colorGrey: #8d8d8d;
-$colorBlue: #3882F6;
-$colorOrange: #ff941b;
-$colorRed: #d43c3c;
-
-$colorBlueHeavy: #184ea3;
-$colorGreyHeavy: #646464;
-
-$colorGreyDark: #383838;
-$colorBlueDark: #1F2937;
-$colorBrownDark: #270d00;
-$colorRedDark: #770000;
+@import "./variables";
 
 
 /* common functions */
@@ -46,24 +19,29 @@ $colorRedDark: #770000;
     color: $color;
 }
 
-@mixin custThemeBlueDarkWhite() {
-    @include custColorBg($colorBlueDark);
+@mixin custThemeGrey9WhiteBlue() {
+    @include custColorBg($colorGrey9);
     @include custColorFt($colorWhiteBlue);
 }
 
-@mixin custThemeBlueWhite() {
-    @include custColorBg($colorBlue);
+@mixin custThemeBlue6WhiteBlue() {
+    @include custColorBg($colorBlue6);
     @include custColorFt($colorWhiteBlue);
 }
 
-@mixin custThemeWhiteBlueBlueDark() {
+@mixin custThemeWhiteBlueBlue10() {
     @include custColorBg($colorWhiteBlue);
-    @include custColorFt($colorBlueDark);
+    @include custColorFt($colorBlue10);
 }
 
-@mixin custThemeGreyLightBlueDark() {
-    @include custColorBg($colorGreyLight);
-    @include custColorFt($colorBlueDark);
+@mixin custThemeGrey1Blue10() {
+    @include custColorBg($colorGrey1);
+    @include custColorFt($colorBlue10);
+}
+
+@mixin custThemeGrey3Grey10() {
+    @include custColorBg($colorGrey3);
+    @include custColorFt($colorGrey10);
 }
 
 @mixin custFontSizeXXL() {
