@@ -17,7 +17,8 @@
 
     body {
         margin: 0;
-        @include custFontSizeBody();
+        font-size: 16px;
+        font-size: 1.6rem;
     }
 
     main {
