@@ -1,4 +1,6 @@
 
+@import "./_reset";
+
 
 /* colors */
 $colorWhiteRed: #f3e9e9;
@@ -17,7 +19,7 @@ $colorWhite: #ffffff;
 $colorGrey: #8d8d8d;
 $colorBlue: #3882F6;
 $colorOrange: #ff941b;
-$colorRed: #c43737;
+$colorRed: #d43c3c;
 
 $colorBlueHeavy: #184ea3;
 $colorGreyHeavy: #646464;
@@ -29,29 +31,6 @@ $colorRedDark: #770000;
 
 
 /* common functions */
-@mixin custStyleDoc() {
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        @include custFontFamBasic();
-      }
-
-    html {
-        font-size: 62.5%;
-    }
-
-    body {
-        @include custFontSizeBody();
-    }
-
-    a {
-        text-decoration: none;
-        color: white;
-    }
-}
-
-
 @mixin custFlexCenterAll() {
     display: flex;
     align-items: center;

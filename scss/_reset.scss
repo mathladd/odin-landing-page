@@ -1,0 +1,212 @@
+
+
+@mixin custResetDoc() {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        @include custFontFamBasic();
+      }
+
+    html {
+        line-height: 1.15;
+        font-size: 62.5%;
+        -webkit-text-size-adjust: 100%;  
+        /* Prevent font size adjustments after orientation changes; iOS */
+    }
+
+    body {
+        margin: 0;
+        @include custFontSizeBody();
+    }
+
+    main {
+        display: block;  
+        /* Render main; IE */
+    }
+
+    a {
+        text-decoration: none;
+        color: inherit;
+        background-color: transparent;
+    }
+
+    img {
+        border-style: none;
+    }
+
+    h1 {
+        font-size: 2rem;
+        margin: 0.67em 0;
+    }
+
+    fieldset {
+        padding: 0.35em 0.75em 0.625em;
+        /* Good fieldset paddings */
+    }
+
+    legend {
+        box-sizing: border-box;
+        color: inherit;
+        display: table;
+        max-width: 100%;
+        padding: 0;
+        white-space: normal;
+    }
+
+    button,
+    input,
+    optgroup,
+    select,
+    textarea {
+        font-family: inherit;
+        font-size: 100%;
+        line-height: 1.15;
+        margin: 0;      
+        /* Remove margin; Firefox and Safari */
+    }
+
+    button,
+    input {
+        overflow: visible;  
+        /* Show overflow; IE and Edge */
+    }
+
+    button,
+    select {
+        text-transform: none;  
+        /* Remove text-transform inheritance; Edge, Firefox, and IE */
+    }
+
+    button,
+    [type="button"],
+    [type="reset"],
+    [type="submit"] {
+        -webkit-appearance: button;  
+        /* allow styling clickable types; iOS and Safari */
+    }
+
+    button::-moz-focus-inner,
+    [type="button"]::-moz-focus-inner,
+    [type="reset"]::-moz-focus-inner,
+    [type="submit"]::-moz-focus-inner {  
+        /* Remove inner border and padding; Firefox */
+        border-style: none;
+        padding: 0;
+    }
+    button:-moz-focusring,
+    [type="button"]:-moz-focusring,
+    [type="reset"]:-moz-focusring,
+    [type="submit"]:-moz-focusring {
+        /* Restore focus due to the change above; Firefox */
+        outline: 1px dotted ButtonText;
+    }
+
+    [type="number"]::-webkit-inner-spin-button,
+    [type="number"]::-webkit-outer-spin-button {
+        /* Correct the cursor style of increment and decrement buttons; Chrome */
+        height: auto;
+    }
+
+    [type="search"] {
+        -webkit-appearance: textfield;
+        /* Correct odd appearance; Chrome and Safari */
+        outline-offset: -2px;
+        /* Correct outline style; Safari */
+    }
+
+    [type="search"]::-webkit-search-decoration {
+      -webkit-appearance: none;
+      /* Remove inner padding; Chrome and Safari on macOS */
+
+    }
+
+    [type="checkbox"],
+    [type="radio"] {
+        box-sizing: border-box;
+        /* correct box sizing; IE 10 */
+        padding: 0;
+        /* remove padding; IE 10 */
+    }
+
+    textarea {
+        overflow: auto;
+    }
+
+    hr {
+        box-sizing: content-box; 
+        /* Correct box sizing; Firefox */
+        height: 0;               
+        /* Correct box sizing; Firefox */
+        overflow: visible; 
+        /* Show overflow; Edge and IE */
+    }
+
+    pre {
+        @include custFontFamMono();
+        font-size: 1em;
+    }
+      
+    code,
+    kbd,
+    samp {
+        @include custFontFamMono(); 
+        font-size: 1em;
+    }
+
+    abbr[title] {
+        border-bottom: none;
+        text-decoration: underline;
+        text-decoration: underline dotted;
+    }
+
+    b,
+    strong {
+      font-weight: bolder;
+    }
+
+    small {
+        font-size: 80%;
+    }
+
+    /* Prevent `sub` and `sup` elements 
+    from affecting line height */
+    sub,
+    sup {
+        font-size: 75%;
+        line-height: 0;
+        position: relative;
+        vertical-align: baseline;
+    }
+    sub {
+        bottom: -0.25em;
+    }
+    sup {
+        top: -0.5em;
+    }
+
+    progress {
+        vertical-align: baseline;
+        /* correct vertical alignment; Chrome, Firefox, and Opera */
+    }
+
+    details {
+        display: block;
+        /* correct display; Edge, IE 10+, and Firefox */
+    }
+
+    summary {
+        display: list-item;  
+        /* Correct display */
+    }
+
+    template {
+        display: none;
+        /* Correct display; IE 10+ */
+    }
+
+    [hidden] {
+        display: none;
+        /* Correct display; IE 10 */
+    }
+}

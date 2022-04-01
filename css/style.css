@@ -8,19 +8,213 @@
 }
 
 html {
+  line-height: 1.15;
   font-size: 62.5%;
+  -webkit-text-size-adjust: 100%;
+  /* Prevent font size adjustments after orientation changes; iOS */
 }
 
 body {
+  margin: 0;
   font-size: 16px;
   font-size: 1.6rem;
 }
 
-a {
-  text-decoration: none;
-  color: white;
+main {
+  display: block;
+  /* Render main; IE */
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+  background-color: transparent;
+}
+
+img {
+  border-style: none;
+}
+
+h1 {
+  font-size: 2rem;
+  margin: 0.67em 0;
+}
+
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+  /* Good fieldset paddings */
+}
+
+legend {
+  box-sizing: border-box;
+  color: inherit;
+  display: table;
+  max-width: 100%;
+  padding: 0;
+  white-space: normal;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  /* Remove margin; Firefox and Safari */
+}
+
+button,
+input {
+  overflow: visible;
+  /* Show overflow; IE and Edge */
+}
+
+button,
+select {
+  text-transform: none;
+  /* Remove text-transform inheritance; Edge, Firefox, and IE */
+}
+
+button,
+[type=button],
+[type=reset],
+[type=submit] {
+  -webkit-appearance: button;
+  /* allow styling clickable types; iOS and Safari */
+}
+
+button::-moz-focus-inner,
+[type=button]::-moz-focus-inner,
+[type=reset]::-moz-focus-inner,
+[type=submit]::-moz-focus-inner {
+  /* Remove inner border and padding; Firefox */
+  border-style: none;
+  padding: 0;
+}
+
+button:-moz-focusring,
+[type=button]:-moz-focusring,
+[type=reset]:-moz-focusring,
+[type=submit]:-moz-focusring {
+  /* Restore focus due to the change above; Firefox */
+  outline: 1px dotted ButtonText;
+}
+
+[type=number]::-webkit-inner-spin-button,
+[type=number]::-webkit-outer-spin-button {
+  /* Correct the cursor style of increment and decrement buttons; Chrome */
+  height: auto;
+}
+
+[type=search] {
+  -webkit-appearance: textfield;
+  /* Correct odd appearance; Chrome and Safari */
+  outline-offset: -2px;
+  /* Correct outline style; Safari */
+}
+
+[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+  /* Remove inner padding; Chrome and Safari on macOS */
+}
+
+[type=checkbox],
+[type=radio] {
+  box-sizing: border-box;
+  /* correct box sizing; IE 10 */
+  padding: 0;
+  /* remove padding; IE 10 */
+}
+
+textarea {
+  overflow: auto;
+}
+
+hr {
+  box-sizing: content-box;
+  /* Correct box sizing; Firefox */
+  height: 0;
+  /* Correct box sizing; Firefox */
+  overflow: visible;
+  /* Show overflow; Edge and IE */
+}
+
+pre {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 1em;
+}
+
+code,
+kbd,
+samp {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 1em;
+}
+
+abbr[title] {
+  border-bottom: none;
+  text-decoration: underline;
+  text-decoration: underline dotted;
+}
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+small {
+  font-size: 80%;
+}
+
+/* Prevent `sub` and `sup` elements 
+from affecting line height */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+progress {
+  vertical-align: baseline;
+  /* correct vertical alignment; Chrome, Firefox, and Opera */
+}
+
+details {
+  display: block;
+  /* correct display; Edge, IE 10+, and Firefox */
+}
+
+summary {
+  display: list-item;
+  /* Correct display */
+}
+
+template {
+  display: none;
+  /* Correct display; IE 10+ */
+}
+
+[hidden] {
+  display: none;
+  /* Correct display; IE 10 */
+}
+
+/* =========================================================
+    ALL
+============================================================ */
 .all__h1-container {
   display: flex;
   align-items: center;
@@ -52,6 +246,9 @@ a {
   color: #e9ecf3;
 }
 
+/* =========================================================
+    index.html 
+============================================================ */
 .index__c1-container {
   display: flex;
   align-items: center;
@@ -100,6 +297,7 @@ a {
 .index__subheader-img img {
   width: 100%;
   height: 100%;
+  image-rendering: high-quality;
 }
 
 .index__c2-container,
@@ -128,25 +326,29 @@ a {
 }
 
 .index__content-box {
-  width: 8em;
-  margin-left: 2em;
-  margin-right: 2em;
-  margin-bottom: 2em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: row wrap;
+  width: 10em;
+  height: 10em;
+  margin: 1em;
 }
 
 .index__content-box-box {
-  width: 100%;
-  height: 8em;
-  margin-bottom: 0.7em;
+  width: 80%;
+  height: 80%;
+  margin-bottom: 0.3em;
   border-style: solid;
   border-color: #3882F6;
-  border-radius: 15px;
+  border-radius: 10px;
 }
 
 .index__content-box-box img {
   max-width: 100%;
-  height: 8em;
-  border-radius: 10px;
+  height: 100%;
+  border-radius: 7px;
+  image-rendering: high-quality;
 }
 
 .index__content-box-content {
@@ -206,6 +408,9 @@ a {
   border-width: 2px;
 }
 
+/* =========================================================
+    contact.html
+============================================================ */
 .contact__fieldset {
   display: flex;
   align-items: center;
@@ -223,15 +428,19 @@ a {
 
 .contact__contact-form input {
   width: 100%;
-  padding: 0.4em;
+  padding: 0.5em;
   border: 1px solid #8d8d8d;
   border-radius: 4px;
+}
+
+.contact__contact-form input:invalid {
+  border-color: #d43c3c;
 }
 
 .contact__moreInfo {
   height: 10em;
   width: 100%;
-  padding: 0.4em;
+  padding: 0.5em;
   font-family: Helvetica, Arial, sans-serif;
 }
 
@@ -250,6 +459,9 @@ a {
   background-color: #184ea3;
 }
 
+/* =========================================================
+    store.html
+============================================================ */
 .store__c1-container {
   background-color: #e9ecf3;
   color: #1F2937;
@@ -308,6 +520,9 @@ a {
   color: #1F2937;
 }
 
+/* =========================================================
+    media queries
+============================================================ */
 @media only screen and (min-width: 250px) and (max-width: 700px) {
   /* Phone */
   .all__header-logo,

@@ -2,9 +2,12 @@
 @import "./_rsrc";
 
 
-@include custStyleDoc();
+@include custResetDoc();
 
 
+/* =========================================================
+    ALL
+============================================================ */
 .all__h1-container {
     @include custFlexCenterAll();
     flex-flow: row wrap;
@@ -31,6 +34,10 @@
     @include custThemeBlueDarkWhite();
 }
 
+
+/* =========================================================
+    index.html 
+============================================================ */
 .index__c1-container {
     @include custFlexCenterAll();
     justify-content: space-between;
@@ -78,12 +85,14 @@
 .index__subheader-img img {
     width: 100%;
     height: 100%;
+    image-rendering: high-quality;
 }
 
 .index__c2-container,
 .contact__c1-container {
     @include custFlexCenterAll();
     flex-flow: row wrap;
+
     @include custThemeWhiteBlueBlueDark();
 } 
 
@@ -102,25 +111,27 @@
 }
 
 .index__content-box {
-    width: 8em;
-    margin-left: 2em;
-    margin-right: 2em;
-    margin-bottom: 2em;
+    @include custFlexCenterAll();
+    flex-flow: row wrap;
+    width: 10em;
+    height: 10em;
+    margin: 1em;
 }
 
 .index__content-box-box {
-    width: 100%;
-    height: 8em;
-    margin-bottom: 0.7em;
+    width: 80%;
+    height: 80%;
+    margin-bottom: 0.3em;
     border-style: solid;
     border-color: $colorBlue;
-    border-radius: 15px;
+    border-radius: 10px;
 }
 
 .index__content-box-box img {
     max-width: 100%;
-    height: 8em;
-    border-radius: 10px;
+    height: 100%;
+    border-radius: 7px;
+    image-rendering: high-quality;
 }
 
 .index__content-box-content {
@@ -182,6 +193,10 @@
     border-width: 2px;
 }
 
+
+/* =========================================================
+    contact.html
+============================================================ */
 .contact__fieldset {
     @include custFlexCenterAll();
     flex-flow: column wrap;
@@ -198,15 +213,19 @@
 
 .contact__contact-form input {
     width: 100%;
-    padding: 0.4em;
+    padding: 0.5em;
     border: 1px solid $colorGrey;
     border-radius: 4px;
+}
+
+.contact__contact-form input:invalid {
+    border-color: $colorRed;
 }
 
 .contact__moreInfo {
     height: 10em;
     width: 100%;
-    padding: 0.4em;
+    padding: 0.5em;
 
     @include custFontFamBasic();
 }
@@ -226,6 +245,10 @@
     @include custColorBg($colorBlueHeavy)
 }
 
+
+/* =========================================================
+    store.html
+============================================================ */
 .store__c1-container {
     @include custThemeWhiteBlueBlueDark();
 }
@@ -277,6 +300,9 @@
 }
 
 
+/* =========================================================
+    media queries
+============================================================ */
 @media only screen and (min-width: 250px) and (max-width: 700px) {
     /* Phone */
     .all__header-logo,

@@ -19,13 +19,13 @@
     <!-- Content -->
     <div class="big-container contact__c1-container"> 
         <!-- method should be "post" -->
-        <form action="./contact.html" method="get">  
+        <form action="#" method="get">  
             <fieldset class="contact__fieldset">
                 <legend>Contact Information</legend>
                 <div class="contact__main-form-1">
                     <div class="contact__contact-form">
                         <label for="fullName">Full name: </label>
-                        <input type="text" name="fullName" id="fullName" placeholder="John Doe">
+                        <input type="text" name="fullName" id="fullName" placeholder="John Doe" maxlength="32">
                     </div>
 
                     <div class="contact__contact-form">
@@ -35,14 +35,14 @@
 
                     <div class="contact__contact-form">
                         <label for="phoneNum">Phone: </label>
-                        <input type="number" name="phoneNum" id="phoneNum" placeholder="000-000-XXXX">
+                        <input type="tel" name="phoneNum" id="phoneNum" placeholder="000-000-XXXX" minlength="5" maxlength="32">
                     </div>
                 </div>
 
                 <div class="contact__additional-info">
                     <div class="contact__contact-form">
                         <label for="moreInfo">Additional Information: </label>
-                        <textarea class="contact__moreInfo"name="moreInfo" id="moreInfo" placeholder="What else would you like us to know?"></textarea>
+                        <textarea class="contact__moreInfo"name="moreInfo" id="moreInfo" placeholder="What else would you like us to know?" minlength="10"></textarea>
                     </div>
                 </div>
                 <button class="contact__submit-button" type="submit">Submit</button>
