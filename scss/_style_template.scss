@@ -1,0 +1,157 @@
+
+@import "./_rsrc";
+
+
+@include custResetDoc();
+
+
+/* =========================================================
+    ALL
+============================================================ */
+.all__big-container {
+    padding-top: 3em;
+    padding-bottom: 3em;
+}
+
+.all__header-container {
+    position: fixed;
+    width: 100%;
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
+}
+
+.all__headers {  // for arranging items inside header 
+    @include custFlexCenterAll();
+    justify-content: space-between;
+}
+
+.all__footer-container {
+    @include custFlexCenterAll();
+    text-align: center;
+}
+
+
+/* =========================================================
+    index.html 
+============================================================ */
+.index__c1-container {
+    padding-top: 8em;
+    @include custFlexCenterAll();
+}
+
+.index__c2-container {
+    @include custFlexCenterAll();
+} 
+
+.index__c3-container {
+    @include custFlexCenterAll();
+}
+
+.index__c4-container {
+    @include custFlexCenterAll();
+}
+
+
+/* =========================================================
+    media queries
+============================================================ */
+@media only screen and (max-width: 350px) {
+    /* Small phones */
+    .applicable {
+        @include custFontSizeMedSmall();
+    }
+
+    .applicable {
+        @include custFontSizeVerySmall();
+    }
+
+    .applicable {
+        @include custFontSizeExtraSmall();
+    }
+
+    .applicable {
+        @include custFontSizeExtraSmall();
+    }
+
+    .all__big-container {
+        padding-left: 2em;
+        padding-right: 2em;
+    }
+}
+
+@media only screen and (min-width: 350.1px) and (max-width: 700px) {
+    /* Phones */
+    .applicable {
+        @include custFontSizeMedSmall();
+    }
+
+    .applicable {
+        @include custFontSizeVerySmall();
+    }
+
+    .applicable {
+        @include custFontSizeExtraSmall();
+    }
+
+    .applicable {
+        @include custFontSizeExtraSmall();
+    }
+
+    .all__big-container {
+        padding-left: 2em;
+        padding-right: 2em;
+    }
+}
+
+@media only screen and (min-width: 700.1px) and (max-width: 1023px) {
+    /* Tablets */
+    .applicable {
+        @include custFontSizeMedSmall();
+    }
+
+    .applicable {
+        @include custFontSizeVerySmall();
+    }
+
+    .applicable {
+        @include custFontSizeExtraSmall();
+    }
+
+    .applicable {
+        @include custFontSizeExtraSmall();
+    }
+
+    .all__big-container {
+        padding-left: 2em;
+        padding-right: 2em;
+    }
+}
+
+@media only screen and (min-width: 1023.1px) {
+    /* Laptop */
+    html {
+        // max-width: 102.3em;
+        margin: 0 auto;
+    }
+    .applicable {
+        @include custFontSizeMedSmall();
+    }
+
+    .applicable {
+        @include custFontSizeVerySmall();
+    }
+
+    .applicable {
+        @include custFontSizeExtraSmall();
+    }
+
+    .applicable {
+        @include custFontSizeExtraSmall();
+    }
+
+    .all__big-container {
+        padding-left: 2em;
+        padding-right: 2em;
+    }
+}
+

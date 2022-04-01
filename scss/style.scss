@@ -24,7 +24,6 @@
 
 .all__headers {
     @include custFlexCenterAll();
-    flex-flow: row wrap;
     justify-content: space-between;
 }
 
@@ -107,7 +106,6 @@
 .index__c2-container,
 .contact__c1-container {
     @include custFlexCenterAll();
-    flex-flow: row wrap;
     padding-top: 8em;
 
     @include custThemeWhiteBlueBlueDark();
@@ -124,12 +122,10 @@
 
 .index__content-box-container {
     @include custFlexCenterAll();
-    flex-flow: row wrap;
 }
 
 .index__content-box {
     @include custFlexCenterAll();
-    flex-flow: row wrap;
     width: 10em;
     height: 10em;
     margin: 1em;
@@ -286,7 +282,6 @@
 ============================================================ */
 .store__c1-container {
     @include custFlexCenterAll();
-    flex-flow: row wrap;
     padding-top: 8em;
     padding-bottom: 6em;
     @include custThemeWhiteBlueBlueDark();
@@ -300,13 +295,11 @@
 
 .store__item-list {
     @include custFlexCenterAll();
-    flex-flow: row wrap;
     max-width: 65em;
 }
 
 .store__item {
     @include custFlexCenterAll();
-    flex-flow: row wrap;
     width: 10em;
     height: 10em;
     margin: 2em;
@@ -419,7 +412,8 @@
         @include custFontSizeVerySmall();
     }
 
-    .contact__c2-container {
+    .contact__c2-container,
+    .store__c2-container {
         @include custFontSizeExtraSmall();
     }
 
@@ -463,7 +457,8 @@
 
     .contact__c2-container,
     .contact__fieldset,
-    .contact__moreInfo {
+    .contact__moreInfo,
+    .store__c2-container {
         @include custFontSizeSmall();
     }
 
@@ -516,10 +511,6 @@
         @include custFontSizeMedSmall();
     }
 
-    .all__header-link {
-        margin: 0em 0em 0em 2em;
-    }
-
     .contact__c2-container {
         @include custFontSizeSmall();
     }
@@ -529,6 +520,10 @@
         padding-right: 4em;
     }
 
+    .all__header-link {
+        margin: 0em 0em 0em 2em;
+    }
+    
     .index__subheader-img {
         flex: 0.3;
     }
