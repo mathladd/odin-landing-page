@@ -482,6 +482,7 @@ template {
 .contact__moreInfo:focus {
   outline: none !important;
   border-color: #3882F6;
+  box-shadow: 1px 1px 4px #bebebe;
 }
 
 .contact__contact-input > input:invalid,

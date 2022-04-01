@@ -247,6 +247,7 @@
 .contact__moreInfo:focus {
     outline: none !important;
     border-color: $colorBlue;
+    box-shadow: 1px 1px 4px $colorGreyPastel;
 }
 .contact__contact-input > input:invalid,
 .contact__moreInfo:invalid {
