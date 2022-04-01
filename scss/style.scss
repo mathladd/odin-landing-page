@@ -232,23 +232,25 @@
     padding: 1em;
 }
 
-.contact__contact-input input {
-    width: 100%;
-    padding: 0.5em;
-    border: 1px solid $colorGrey;
-    border-radius: 4px;
-}
-
-.contact__contact-input input:invalid {
-    border-color: $colorRed;
-}
-
 .contact__moreInfo {
     height: 10em;
+}
+
+.contact__contact-input > input,
+.contact__moreInfo {
     width: 100%;
     padding: 0.5em;
-
-    @include custFontFamBasic();
+    border: 2px solid $colorGreyLight;
+    border-radius: 4px;
+}
+.contact__contact-input > input:focus,
+.contact__moreInfo:focus {
+    outline: none !important;
+    border-color: $colorBlue;
+}
+.contact__contact-input > input:invalid,
+.contact__moreInfo:invalid {
+    border-color: $colorRed;
 }
 
 .contact__submit-button {
@@ -349,7 +351,7 @@
     .index__content-title,
     .index__quote,
     .store__title {
-        @include custFontSizeMedSmall();
+        @include custFontSizeMS();
     }
 
     .index__subheader-text2,
@@ -358,18 +360,15 @@
     .index__cta-text1,
     .contact__fieldset,
     .contact__moreInfo {
-        @include custFontSizeVerySmall();
+        @include custFontSizeXS();
     }
 
     .all__footer-container,
     .all__header-link,
     .index__content-box-content,
-    .index__cta-text2 {
-        @include custFontSizeExtraSmall();
-    }
-
+    .index__cta-text2,
     .contact__c2-container {
-        @include custFontSizeExtraSmall();
+        @include custFontSizeXXS();
     }
 
     .all__big-container {
@@ -393,7 +392,7 @@
     .index__content-title,
     .index__quote,
     .store__title {
-        @include custFontSizeMedLarge();
+        @include custFontSizeML();
     }
 
     .index__subheader-text2,
@@ -402,19 +401,19 @@
     .index__cta-text1,
     .contact__fieldset,
     .contact__moreInfo {
-        @include custFontSizeSmall();
+        @include custFontSizeS();
     }
 
     .all__footer-container,
     .all__header-link,
     .index__content-box-content,
     .index__cta-text2 {
-        @include custFontSizeVerySmall();
+        @include custFontSizeXS();
     }
 
     .contact__c2-container,
     .store__c2-container {
-        @include custFontSizeExtraSmall();
+        @include custFontSizeXXS();
     }
 
     .all__big-container {
@@ -437,7 +436,7 @@
     .index__subheader-text1,
     .index__content-title,
     .store__title {
-        @include custFontSizeLarge();
+        @include custFontSizeL();
     }
 
     .index__subheader-text2,
@@ -445,21 +444,21 @@
     .index__quote,
     .index__quote-author,
     .index__cta-text1 {
-        @include custFontSizeMedLarge();
+        @include custFontSizeML();
     }
 
     .all__footer-container,
     .all__header-link,
     .index__content-box-content,
     .index__cta-text2 {
-        @include custFontSizeMedSmall();
+        @include custFontSizeMS();
     }
 
     .contact__c2-container,
     .contact__fieldset,
     .contact__moreInfo,
     .store__c2-container {
-        @include custFontSizeSmall();
+        @include custFontSizeS();
     }
 
     .all__big-container {
@@ -491,7 +490,7 @@
     .index__subheader-text1,
     .index__content-title,
     .store__title {
-        @include custFontSizeLarge();
+        @include custFontSizeL();
     }
 
     .index__subheader-text2,
@@ -499,7 +498,7 @@
     .index__quote,
     .index__quote-author,
     .index__cta-text1 {
-        @include custFontSizeMedLarge();
+        @include custFontSizeML();
     }
 
     .all__footer-container,
@@ -508,11 +507,11 @@
     .index__cta-text2,
     .contact__fieldset,
     .contact__moreInfo {
-        @include custFontSizeMedSmall();
+        @include custFontSizeMS();
     }
 
     .contact__c2-container {
-        @include custFontSizeSmall();
+        @include custFontSizeS();
     }
 
     .all__big-container {
