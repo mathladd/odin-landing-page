@@ -126,10 +126,16 @@ $colorRedDark: #770000;
     font-size: 1.8rem;
 }
 
-@mixin custFontSizeExtraSmall() {
+@mixin custFontSizeVerySmall() {
     font-size: 16px;
     font-size: 1.6rem;
 }
+
+@mixin custFontSizeExtraSmall() {
+    font-size: 12px;
+    font-size: 1.2rem;
+}
+
 
 @mixin custFontFamMono() {
     font-family: 'Courier New', Courier, monospace;

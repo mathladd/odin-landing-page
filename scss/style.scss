@@ -27,7 +27,6 @@
 .all__footer-container {
     @include custFlexCenterAll();
     text-align: center;
-    padding: 3em 10em 3em 10em;
 
     @include custThemeBlueDarkWhite();
 }
@@ -41,7 +40,7 @@
 
 .index__subheader-texts {
     flex: 0.5;
-    padding-right: 3em;
+    padding-right: 2em;
 }
 
 .index__subheader-text1 {
@@ -77,16 +76,14 @@
 }
 
 .index__subheader-img img {
-    max-width: 100%;
-    max-height: 100%;
+    width: 100%;
+    height: 100%;
 }
 
 .index__c2-container,
 .contact__c1-container {
     @include custFlexCenterAll();
     flex-flow: row wrap;
-    padding-top: 3em;
-    padding-bottom: 8em;
     @include custThemeWhiteBlueBlueDark();
 } 
 
@@ -133,9 +130,6 @@
 
 .index__c3-container,
 .contact__c2-container {
-    padding-top: 3em;
-    padding-bottom: 3em;
-
     @include custThemeGreyLightBlueDark();
 }
 
@@ -155,8 +149,7 @@
 }
 
 .index__c4-container {
-    padding-top: 5em;
-    padding-bottom: 6em;
+    @include custThemeWhiteBlueBlueDark();
 }
 
 .index__cta {
@@ -240,31 +233,43 @@
 .store__item-list {
     @include custFlexCenterAll();
     flex-flow: row wrap;
-    border: 1px solid black;
 }
 
 .store__item {
     @include custFlexCenterAll();
     flex-flow: row wrap;
-    border: 1px solid $colorGrey;
-    width: 50%;
+    width: 10em;
+    height: 10em;
+    margin: 2em;
 }
 
 .store__item-pic {
     @include custFlexCenterAll();
     width: 100%;
+    height: 80%;
+    border:1px solid $colorGrey;
+    border-radius: 10px;
     margin-bottom: 1em;
 }
 
 .store__item-pic div {
-    border:1px solid $colorGrey;
     width: 100%;
-    height: 10em;
+    height: 100%;
+    & img {
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+    }
 }
-
 
 .store__item-name {
     text-align: center;
+}
+
+.store__item-price {
+    text-align: center;
+    @include custColorFt($colorGreyHeavy);
+    font-size: 90%;
 }
 
 .store__c2-container {
@@ -294,6 +299,10 @@
     .all__header-link,
     .index__content-box-content,
     .index__cta-text2 {
+        @include custFontSizeVerySmall();
+    }
+
+    .contact__c2-container {
         @include custFontSizeExtraSmall();
     }
 
@@ -331,6 +340,10 @@
         @include custFontSizeMed();
     }
 
+    .contact__c2-container {
+        @include custFontSizeSmall();
+    }
+
     .big-container {
         padding: 5em 5em 5em 5em;
     }
@@ -351,14 +364,14 @@
     .index__subheader-text1,
     .index__content-title,
     .index__quote {
-        @include custFontSizeLarge();
+        @include custFontSizeExtraLarge();
     }
 
     .index__subheader-text2,
     .index__signup-button,
     .index__quote-author,
     .index__cta-text1 {
-        @include custFontSizeMed();
+        @include custFontSizeMedLarge();
     }
 
     .all__footer-container,
@@ -367,6 +380,10 @@
     .index__cta-text2,
     .contact__fieldset,
     .contact__moreInfo {
+        @include custFontSizeMed();
+    }
+
+    .contact__c2-container {
         @include custFontSizeSmall();
     }
 
