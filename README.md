@@ -1,3 +1,3 @@
 # odin-landing-page
 
-This project demonstrates basic understandings of HTML and CSS through creating a landing page site at https://mathladd.github.io/odin-landing-page/
+This project demonstrates understandings of HTML, CSS, SASS, as well as responsive design through creating a basic website at https://mathladd.github.io/odin-landing-page/
