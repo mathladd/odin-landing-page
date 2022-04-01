@@ -278,7 +278,7 @@
 .store__item-list {
     @include custFlexCenterAll();
     flex-flow: row wrap;
-    max-width: 60em;
+    max-width: 65em;
 }
 
 .store__item {
