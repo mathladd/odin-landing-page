@@ -271,12 +271,14 @@
     store.html
 ============================================================ */
 .store__c1-container {
+    @include custFlexCenterAll();
     @include custThemeWhiteBlueBlueDark();
 }
 
 .store__item-list {
     @include custFlexCenterAll();
     flex-flow: row wrap;
+    max-width: 60em;
 }
 
 .store__item {

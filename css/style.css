@@ -491,6 +491,9 @@ template {
     store.html
 ============================================================ */
 .store__c1-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: #e9ecf3;
   color: #1F2937;
 }
@@ -500,6 +503,7 @@ template {
   align-items: center;
   justify-content: center;
   flex-flow: row wrap;
+  max-width: 60em;
 }
 
 .store__item {
