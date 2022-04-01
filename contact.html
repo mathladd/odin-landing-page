@@ -19,36 +19,35 @@
     <!-- Content -->
     <div class="big-container contact__c1-container"> 
         <!-- method should be "post" -->
-        <form action="#" method="get">  
-            <fieldset class="contact__fieldset">
-                <legend>Contact Information</legend>
-                <div class="contact__main-form-1">
-                    <div class="contact__contact-form">
-                        <label for="fullName">Full name: </label>
-                        <input type="text" name="fullName" id="fullName" placeholder="John Doe" maxlength="32">
+        <div class="contact__contact-form">
+            <form action="#" method="get">
+                <fieldset class="contact__fieldset">
+                    <legend>Contact Information</legend>
+                    <div class="contact__main-form-1">
+                        <div class="contact__contact-input">
+                            <label for="fullName">Full name: </label>
+                            <input type="text" name="fullName" id="fullName" placeholder="John Doe" maxlength="32">
+                        </div>
+                        <div class="contact__contact-input">
+                            <label for="email">Email: </label>
+                            <input type="email" name="email" id="email" placeholder="johndoe@example.com">
+                        </div>
+                        <div class="contact__contact-input">
+                            <label for="phoneNum">Phone: </label>
+                            <input type="tel" name="phoneNum" id="phoneNum" placeholder="000-000-XXXX" minlength="5" maxlength="32">
+                        </div>
                     </div>
-
-                    <div class="contact__contact-form">
-                        <label for="email">Email: </label>
-                        <input type="email" name="email" id="email" placeholder="johndoe@example.com">
+                    <div class="contact__additional-info">
+                        <div class="contact__contact-input">
+                            <label for="moreInfo">Additional Information: </label>
+                            <textarea class="contact__moreInfo"name="moreInfo" id="moreInfo" placeholder="What else would you like us to know?" minlength="10"></textarea>
+                        </div>
                     </div>
-
-                    <div class="contact__contact-form">
-                        <label for="phoneNum">Phone: </label>
-                        <input type="tel" name="phoneNum" id="phoneNum" placeholder="000-000-XXXX" minlength="5" maxlength="32">
-                    </div>
-                </div>
-
-                <div class="contact__additional-info">
-                    <div class="contact__contact-form">
-                        <label for="moreInfo">Additional Information: </label>
-                        <textarea class="contact__moreInfo"name="moreInfo" id="moreInfo" placeholder="What else would you like us to know?" minlength="10"></textarea>
-                    </div>
-                </div>
-                <button class="contact__submit-button" type="submit">Submit</button>
-            </fieldset>
-        </form>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d18670.28484947967!2d107.08342242711447!3d10.346370942496316!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31756fe297e51efd%3A0xbb3c2fb0da0c83bf!2sBack%20beach!5e0!3m2!1sen!2s!4v1648704504180!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <button class="contact__submit-button" type="submit">Submit</button>
+                </fieldset>
+            </form>
+        </div>
+        <div class="contact__map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d18670.28484947967!2d107.08342242711447!3d10.346370942496316!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31756fe297e51efd%3A0xbb3c2fb0da0c83bf!2sBack%20beach!5e0!3m2!1sen!2s!4v1648704504180!5m2!1sen!2s" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
     </div>
 
     <div class="big-container contact__c2-container">

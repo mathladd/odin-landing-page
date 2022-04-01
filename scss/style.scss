@@ -24,7 +24,9 @@
 
 .all__header-link {
     @include custFlexCenterAll();
-    padding: 0em 0.8em 0em 0.8em;
+    margin: 0em 0em 0em 0.8em;
+
+    text-align: right;
 }
 
 .all__footer-container {
@@ -40,14 +42,12 @@
 ============================================================ */
 .index__c1-container {
     @include custFlexCenterAll();
-    justify-content: space-between;
-
     @include custThemeBlueDarkWhite();
 }
 
 .index__subheader-texts {
-    flex: 0.5;
     padding-right: 2em;
+    flex: 0.5;
 }
 
 .index__subheader-text1 {
@@ -79,12 +79,15 @@
 
 .index__subheader-img {
     @include custFlexCenterAll();
+    height: 100%;
     flex: 0.5;
 }
 
 .index__subheader-img img {
     width: 100%;
     height: 100%;
+    max-width: 25em;
+    max-height: 30em;
     image-rendering: high-quality;
 }
 
@@ -141,29 +144,33 @@
 
 .index__c3-container,
 .contact__c2-container {
+    @include custFlexCenterAll();
     @include custThemeGreyLightBlueDark();
 }
 
-.index__quote {
-    padding-top: 2em;
-    margin-bottom: 0.8em;
+.quote-container {
+    max-width: 50em;
+}
 
+.index__quote {
+    margin-bottom: 0.8em;
     font-weight: 100;
     font-style: italic;
 }
 
 .index__quote-author {
-    padding-bottom: 3em;
 
     text-align: right;
     font-weight: 900;
 }
 
 .index__c4-container {
+    @include custFlexCenterAll();
     @include custThemeWhiteBlueBlueDark();
 }
 
 .index__cta {
+    max-width: 50em;
     border-radius: 10px;
 
     @include custThemeBlueWhite();
@@ -197,28 +204,32 @@
 /* =========================================================
     contact.html
 ============================================================ */
+.contact__contact-form {
+    @include custFlexCenterAll();
+    margin: 1em;
+}
+
 .contact__fieldset {
     @include custFlexCenterAll();
     flex-flow: column wrap;
-    min-width: 20em;
-    margin-bottom: 3em;
+    max-width: 20em;
 
     @include custColorBg($colorWhite);
     @include custColorFt($colorBlueDark);
 }
 
-.contact__contact-form {
+.contact__contact-input {
     padding: 1em;
 }
 
-.contact__contact-form input {
+.contact__contact-input input {
     width: 100%;
     padding: 0.5em;
     border: 1px solid $colorGrey;
     border-radius: 4px;
 }
 
-.contact__contact-form input:invalid {
+.contact__contact-input input:invalid {
     border-color: $colorRed;
 }
 
@@ -243,6 +254,17 @@
 
 .contact__submit-button:active {
     @include custColorBg($colorBlueHeavy)
+}
+
+.contact__map {
+    height: 20em;
+    width: 30em;
+    margin: 1em;
+}
+
+.contact__map iframe {
+    width: 100%;
+    height: 100%;
 }
 
 
@@ -303,7 +325,45 @@
 /* =========================================================
     media queries
 ============================================================ */
-@media only screen and (min-width: 250px) and (max-width: 700px) {
+@media only screen and (max-width: 350px) {
+    /* Phone */
+    .all__header-logo,
+    .index__subheader-text1,
+    .index__content-title,
+    .index__quote {
+        @include custFontSizeMedSmall();
+    }
+
+    .index__subheader-text2,
+    .index__signup-button,
+    .index__quote-author,
+    .index__cta-text1,
+    .contact__fieldset,
+    .contact__moreInfo {
+        @include custFontSizeVerySmall();
+    }
+
+    .all__footer-container,
+    .all__header-link,
+    .index__content-box-content,
+    .index__cta-text2 {
+        @include custFontSizeExtraSmall();
+    }
+
+    .contact__c2-container {
+        @include custFontSizeExtraSmall();
+    }
+
+    .big-container {
+        padding: 2em 2em 2em 2em;
+    }
+
+    .index__cta {
+        padding: 2em 2em 2em 2em;
+    }
+}
+
+@media only screen and (min-width: 350.1px) and (max-width: 700px) {
     /* Phone */
     .all__header-logo,
     .index__subheader-text1,
@@ -341,60 +401,69 @@
     }
 }
 
-@media only screen and (min-width: 701px) and (max-width: 1023px) {
+@media only screen and (min-width: 700.1px) and (max-width: 1023px) {
     /* Tablet */
     .all__header-logo,
     .index__subheader-text1,
-    .index__content-title,
-    .index__quote {
-        @include custFontSizeVeryLarge();
+    .index__content-title {
+        @include custFontSizeLarge();
     }
 
     .index__subheader-text2,
     .index__signup-button,
+    .index__quote,
     .index__quote-author,
     .index__cta-text1 {
-        @include custFontSizeLarge();
+        @include custFontSizeMedLarge();
     }
 
     .all__footer-container,
     .all__header-link,
     .index__content-box-content,
-    .index__cta-text2,
-    .contact__fieldset,
-    .contact__moreInfo {
-        @include custFontSizeMed();
+    .index__cta-text2 {
+        @include custFontSizeMedSmall();
     }
 
-    .contact__c2-container {
+    .contact__c2-container,
+    .contact__fieldset,
+    .contact__moreInfo {
         @include custFontSizeSmall();
     }
 
     .big-container {
-        padding: 5em 5em 5em 5em;
+        padding: 3em 4em 3em 4em;
+    }
+
+    .index__subheader-img {
+        flex: 0.6;
     }
 
     .index__cta {
         padding: 3em 3em 3em 3em;
     }
+
+    .contact__map {
+        flex: 1;
+        height: 40em;
+    }
+    
 }
 
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 1023.1px) {
     /* Laptop */
     html {
-        width: 102.4em;
         margin: 0 auto;
     }
 
     .all__header-logo,
     .index__subheader-text1,
-    .index__content-title,
-    .index__quote {
-        @include custFontSizeExtraLarge();
+    .index__content-title {
+        @include custFontSizeLarge();
     }
 
     .index__subheader-text2,
     .index__signup-button,
+    .index__quote,
     .index__quote-author,
     .index__cta-text1 {
         @include custFontSizeMedLarge();
@@ -406,7 +475,11 @@
     .index__cta-text2,
     .contact__fieldset,
     .contact__moreInfo {
-        @include custFontSizeMed();
+        @include custFontSizeMedSmall();
+    }
+
+    .all__header-link {
+        margin: 0em 0em 0em 3em;
     }
 
     .contact__c2-container {
@@ -414,10 +487,19 @@
     }
 
     .big-container {
-        padding: 5em 5em 5em 5em;
+        padding: 3em 4em 3em 4em;
+    }
+
+    .index__subheader-img {
+        flex: 0.3;
     }
 
     .index__cta {
         padding: 2em 6em 2em 6em;
+    }
+
+    .contact__map {
+        flex: 1;
+        height: 45em;
     }
 }
