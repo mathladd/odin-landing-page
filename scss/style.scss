@@ -285,9 +285,17 @@
     store.html
 ============================================================ */
 .store__c1-container {
-    padding-top: 8em;
     @include custFlexCenterAll();
+    flex-flow: row wrap;
+    padding-top: 8em;
+    padding-bottom: 6em;
     @include custThemeWhiteBlueBlueDark();
+}
+
+.store__title {
+    width: 100%;
+    padding: 1em 1em 1em 1em;
+    text-align: center;
 }
 
 .store__item-list {
@@ -342,11 +350,12 @@
     media queries
 ============================================================ */
 @media only screen and (max-width: 350px) {
-    /* Phone */
+    /* Small phones */
     .all__header-logo,
     .index__subheader-text1,
     .index__content-title,
-    .index__quote {
+    .index__quote,
+    .store__title {
         @include custFontSizeMedSmall();
     }
 
@@ -389,8 +398,9 @@
     .all__header-logo,
     .index__subheader-text1,
     .index__content-title,
-    .index__quote {
-        @include custFontSizeMed();
+    .index__quote,
+    .store__title {
+        @include custFontSizeMedLarge();
     }
 
     .index__subheader-text2,
@@ -431,7 +441,8 @@
     /* Tablet */
     .all__header-logo,
     .index__subheader-text1,
-    .index__content-title {
+    .index__content-title,
+    .store__title {
         @include custFontSizeLarge();
     }
 
@@ -483,7 +494,8 @@
 
     .all__header-logo,
     .index__subheader-text1,
-    .index__content-title {
+    .index__content-title,
+    .store__title {
         @include custFontSizeLarge();
     }
 
@@ -505,7 +517,7 @@
     }
 
     .all__header-link {
-        margin: 0em 0em 0em 3em;
+        margin: 0em 0em 0em 2em;
     }
 
     .contact__c2-container {
